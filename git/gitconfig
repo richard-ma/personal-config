@@ -1,0 +1,39 @@
+[core]
+	editor = vim
+	pager = less
+[user]
+	name = Richard Ma
+	email = richard.ma.19850509@gmail.com
+	signingkey = A8911056
+[github]
+	user = richard-ma
+	token = 55e3f4eb9d3ec2db788921d6bd0c9697
+[alias]
+	st = status -s
+	ci = commit -a
+	w = whatchanged
+    pom = push origin master
+[diff]
+	renamelimit = 0
+[color]
+    ui = true
+	diff = auto
+	interactive = auto
+	status = auto
+	branch = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[gc]
+	auto = 1

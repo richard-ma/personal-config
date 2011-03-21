@@ -1,0 +1,6 @@
+[autogeili]
+fqdn = ppa.launchpad.net
+method = ftp
+incoming = ~richard-ma/autogeili/ubuntu/
+login = anonymous
+allow_unsigned_uploads = 0
