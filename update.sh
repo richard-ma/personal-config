@@ -9,6 +9,7 @@ function do_update()
 
     if [ -e $link_file ]; then
         echo ">>Delete old file(s): \"$link_file\""
+        echo $link_file
         rm $link_file
     fi
 
@@ -21,6 +22,7 @@ function do_update()
 source_file="$PWD/bashrc"
 target_file="$HOME/.bashrc"
 do_update $source_file $target_file
+source $target_file
 
 source_file="$PWD/vimrc"
 target_file="$HOME/.vimrc"

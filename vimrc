@@ -118,13 +118,9 @@ map <leader>pp :setlocal paste!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the curors - when moving vertical..
 set so=7
-
 set wildmenu "Turn on WiLd menu
-
 set ruler "Always show current position
-
 set cmdheight=2 "The commandbar height
-
 set hid "Change buffer - without saving
 
 " Set backspace config
@@ -572,7 +568,7 @@ nnoremap <silent> sI     :FufBookmarkDirAdd<CR>
 nnoremap <silent> sq     :FufQuickfix<CR>
 
 "Vim WIKI configurations
-let g:vimwiki_list = [{}, {'path': '~/personal-wiki/src', 'path_html': '~/personal-wiki/', 'auto_export': 1, 'html_header': '~/personal-wiki/src/header.tpl', 'html_footer': '~/personal-wiki/src/footer.tpl'}]
+let g:vimwiki_list = [{}, {'path': '~/Documents/personal-wiki/src', 'path_html': '~/Documents/personal-wiki/', 'auto_export': 1, 'html_header': '~/Documents/personal-wiki/src/header.tpl', 'html_footer': '~/Documents/personal-wiki/src/footer.tpl'}]
 let g:vimwiki_camel_case = 0
 let g:vimwiki_html_header_numbering = 2
 let g:vimwiki_html_header_numbering_sym = '.'
