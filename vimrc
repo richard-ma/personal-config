@@ -572,7 +572,7 @@ nnoremap <silent> sI     :FufBookmarkDirAdd<CR>
 nnoremap <silent> sq     :FufQuickfix<CR>
 
 "Vim WIKI configurations
-let g:vimwiki_list = [{}, {'path': '~/document/wiki/src', 'path_html': '~/document/wiki/', 'auto_export': 1, 'html_header': '~/document/wiki/src/header.tpl', 'html_footer': '~/document/wiki/src/footer.tpl'}]
+let g:vimwiki_list = [{}, {'path': '~/personal-wiki/src', 'path_html': '~/personal-wiki/', 'auto_export': 1, 'html_header': '~/personal-wiki/src/header.tpl', 'html_footer': '~/personal-wiki/src/footer.tpl'}]
 let g:vimwiki_camel_case = 0
 let g:vimwiki_html_header_numbering = 2
 let g:vimwiki_html_header_numbering_sym = '.'
