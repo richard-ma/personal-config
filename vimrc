@@ -425,6 +425,16 @@ autocmd BufWrite *.py :call DeleteTrailingWS()
 
 set guitablabel=%t
 
+"Vimwiki mappings
+map <Leader>wf <Plug>VimwikiFollowLink
+map <Leader>we <Plug>VimwikiSplitLink
+map <Leader>wq <Plug>VimwikiVSplitLink
+map <Leader>wb <Plug>VimwikiGoBackLink
+map <Leader>wn <Plug>VimwikiNextLink
+map <Leader>wp <Plug>VimwikiPrevLink
+map <Leader>dd <Plug>VimwikiDeleteLink
+map <Leader>rr <Plug>VimwikiRenameLink
+map <leader>tt <Plug>VimwikiToggleListItem
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Cope
