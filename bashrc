@@ -113,3 +113,6 @@ fi
 # dh_make
 export DEBEMAIL="richard.ma.19850509@gmail.com"
 export DEBFULLNAME="Richard Ma"
+
+# PS1 settings
+export PS1="\e[33;40m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\e[0m "
