@@ -103,11 +103,11 @@ fi
 # Exports
 export EDITOR=vim
 
-export PATH=$PATH:/home/richardma/opt/android-sdk-linux_86/tools
-export PATH=$PATH:/home/richardma/Projects/everywriter/bin
+export PATH=$PATH:~/opt/android-sdk-linux_86/tools
+export PATH=$PATH:~/Projects/everywriter/bin
 
 if [ -f ~/bin ]; then
-    export PATH=$PATH:/home/richardma/bin/
+    export PATH=$PATH:~/bin/
 fi
 
 # dh_make

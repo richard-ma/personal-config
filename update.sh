@@ -40,3 +40,6 @@ source_file="$PWD/dput.cf"
 target_file="$HOME/.dput.cf"
 do_update $source_file $target_file
 
+source_file="$PWD/bin"
+target_file="$HOME/bin"
+do_update $source_file $target_file
