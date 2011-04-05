@@ -590,7 +590,5 @@ let vimwiki_html_header_numbering_sym = '.'
 "Zencoding configurations
 let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
 let user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
-let g:user_zen_leader_key = '<C-Y>,'
-let user_zen_leader_key = '<C-Y>,'
 let g:use_zen_complete_tag = 1
 let use_zen_complete_tag = 1
