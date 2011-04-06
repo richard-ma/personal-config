@@ -578,8 +578,8 @@ nnoremap <silent> sI     :FufBookmarkDirAdd<CR>
 nnoremap <silent> sq     :FufQuickfix<CR>
 
 "Vim WIKI configurations
-let g:vimwiki_list = [{'path': '~/Documents/personal-wiki/src', 'path_html': '~/Documents/personal-wiki/', 'auto_export': 1, 'html_header': '~/Documents/personal-wiki/src/header.tpl', 'html_footer': '~/Documents/personal-wiki/src/footer.tpl'}]
-let vimwiki_list = [{'path': '~/Documents/personal-wiki/src', 'path_html': '~/Documents/personal-wiki/', 'auto_export': 1, 'html_header': '~/Documents/personal-wiki/src/header.tpl', 'html_footer': '~/Documents/personal-wiki/src/footer.tpl'}]
+let g:vimwiki_list = [{'path': '~/Personal/wiki/src', 'path_html': '~/Personal/wiki/', 'auto_export': 1, 'html_header': '~/Personal/wiki/src/header.tpl', 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
+let vimwiki_list = [{'path': '~/Personal/wiki/src', 'path_html': '~/Personal/wiki/', 'auto_export': 1, 'html_header': '~/Personal/wiki/src/header.tpl', 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
 let g:vimwiki_camel_case = 0
 let vimwiki_camel_case = 0
 let g:vimwiki_html_header_numbering = 2
