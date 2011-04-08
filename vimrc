@@ -526,7 +526,7 @@ map <leader>pp :setlocal paste!<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Jerry's configurations
+" Richard Ma's configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcut for generating ctags
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
@@ -592,3 +592,10 @@ let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'ht
 let user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
 let g:use_zen_complete_tag = 1
 let use_zen_complete_tag = 1
+
+"NERD tree configurations
+map <leader>tt :NERDTreeToggle<CR>
+let g:NERDChristmasTree = 1
+let NERDChristmasTree = 1
+let g:NERDTreeHighlightCursorline = 1
+let NERDTreeHighlightCursorline = 1
