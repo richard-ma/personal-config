@@ -432,9 +432,8 @@ map <Leader>wq <Plug>VimwikiVSplitLink
 map <Leader>wb <Plug>VimwikiGoBackLink
 map <Leader>wn <Plug>VimwikiNextLink
 map <Leader>wp <Plug>VimwikiPrevLink
-map <Leader>dd <Plug>VimwikiDeleteLink
-map <Leader>rr <Plug>VimwikiRenameLink
-map <leader>tt <Plug>VimwikiToggleListItem
+map <Leader>wd <Plug>VimwikiDeleteLink
+map <Leader>wr <Plug>VimwikiRenameLink
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Cope
@@ -594,7 +593,7 @@ let g:use_zen_complete_tag = 1
 let use_zen_complete_tag = 1
 
 "NERD tree configurations
-map <leader>tt :NERDTreeToggle<CR>
+map <F7> :NERDTreeToggle<CR>
 let g:NERDChristmasTree = 1
 let NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
