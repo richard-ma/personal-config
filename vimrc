@@ -448,7 +448,7 @@ map <leader>p :cp<cr>
 " => Minibuffer plugin
 """"""""""""""""""""""""""""""
 let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne = 2
+let g:miniBufExplorerMoreThanOne = 4
 let g:miniBufExplModSelTarget = 0
 let g:miniBufExplUseSingleClick = 1
 let g:miniBufExplMapWindowNavVim = 1
@@ -598,3 +598,14 @@ let g:NERDChristmasTree = 1
 let NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
 let NERDTreeHighlightCursorline = 1
+
+"Taglist configurations
+map <leader>tt :TlistToggle<CR>
+let g:Tlist_Ctags_Cmd = '/usr/bin/ctags'
+let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+let g:Tlist_Use_Right_Window = 1
+let Tlist_Use_Right_Window = 1
+let g:Tlist_Exit_OnlyWindow = 1
+let Tlist_Exit_OnlyWindow = 1
+let g:Tlist_Show_One_File = 1
+let Tlist_Show_One_File = 1
