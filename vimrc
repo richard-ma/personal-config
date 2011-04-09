@@ -600,7 +600,7 @@ let g:NERDTreeHighlightCursorline = 1
 let NERDTreeHighlightCursorline = 1
 
 "Taglist configurations
-map <leader>tt :TlistToggle<CR>
+map <leader>tl :TlistToggle<CR>
 let g:Tlist_Ctags_Cmd = '/usr/bin/ctags'
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 let g:Tlist_Use_Right_Window = 1
