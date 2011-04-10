@@ -1,9 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
-# If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+# ~/.bashrc: executed by bash(1) for non-login shells.  # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc) # for examples # If not running interactively, don't do anything [ -z "$PS1" ] && return
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
@@ -113,3 +108,6 @@ fi
 # dh_make
 export DEBEMAIL="richard.ma.19850509@gmail.com"
 export DEBFULLNAME="Richard Ma"
+
+# user env vars
+export USER_CONFIG_DIR=~/Personal/config
