@@ -587,7 +587,7 @@ let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'ht
 let g:use_zen_complete_tag = 1
 
 "NERD tree configurations
-map <F7> :NERDTreeToggle<CR>
+map <leader>tt :NERDTreeToggle<CR>
 let g:NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
 
