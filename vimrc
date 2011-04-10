@@ -578,34 +578,25 @@ nnoremap <silent> sq     :FufQuickfix<CR>
 
 "Vim WIKI configurations
 let g:vimwiki_list = [{'path': '~/Personal/wiki/src', 'path_html': '~/Personal/wiki/', 'auto_export': 1, 'html_header': '~/Personal/wiki/src/header.tpl', 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
-let vimwiki_list = [{'path': '~/Personal/wiki/src', 'path_html': '~/Personal/wiki/', 'auto_export': 1, 'html_header': '~/Personal/wiki/src/header.tpl', 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
 let g:vimwiki_camel_case = 0
-let vimwiki_camel_case = 0
 let g:vimwiki_html_header_numbering = 2
-let vimwiki_html_header_numbering = 2
 let g:vimwiki_html_header_numbering_sym = '.'
-let vimwiki_html_header_numbering_sym = '.'
 
 "Zencoding configurations
 let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
-let user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
 let g:use_zen_complete_tag = 1
-let use_zen_complete_tag = 1
 
 "NERD tree configurations
 map <F7> :NERDTreeToggle<CR>
 let g:NERDChristmasTree = 1
-let NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
-let NERDTreeHighlightCursorline = 1
 
 "Taglist configurations
 map <leader>tl :TlistToggle<CR>
 let g:Tlist_Ctags_Cmd = '/usr/bin/ctags'
-let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+let g:Tlist_Auto_Highlight_Tag = 1
 let g:Tlist_Use_Right_Window = 1
-let Tlist_Use_Right_Window = 1
 let g:Tlist_Exit_OnlyWindow = 1
-let Tlist_Exit_OnlyWindow = 1
 let g:Tlist_Show_One_File = 1
-let Tlist_Show_One_File = 1
+let g:Tlist_GainFocus_On_ToggleOpen = 1
+let g:Tlist_Sort_type = "name"
