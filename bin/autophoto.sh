@@ -19,6 +19,8 @@ composite \
     tmp2.ptmp
 
 convert \
+    -bordercolor white \
+    -border 1\
     -bordercolor black \
     -border 15 \
     -bordercolor white \
