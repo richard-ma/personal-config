@@ -19,6 +19,11 @@ function do_update()
     echo 
 }
 
+source_file="$PWD/bash_aliases"
+target_file="$HOME/.bash_aliases"
+do_update $source_file $target_file
+source $target_file
+
 source_file="$PWD/bashrc"
 target_file="$HOME/.bashrc"
 do_update $source_file $target_file
