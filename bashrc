@@ -25,7 +25,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -45,9 +45,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[33;40m\]\u@\h-\d \t\[\033[00m\]:\[\033[32;40m\]\w\[\033[00m\]\n\[\033[01;33m\]\$\[\033[00m\] '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h-\d \t:\w\n\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -111,3 +111,4 @@ export DEBFULLNAME="Richard Ma"
 
 # user env vars
 export USER_CONFIG_DIR=~/Personal/config
+export USER_WIKI_DIR=~/Personal/wiki
