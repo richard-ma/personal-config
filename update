@@ -1,22 +1,18 @@
 #!/usr/bin/env bash
 
+DEBUG_STR="Debug: "
+
 function do_update()
 {
     source_file=$1
     link_file=$2
-    echo "================================================="
-    echo "Start    Update: \"$source_file -> $link_file\""
 
     if [ -e $link_file ]; then
-        echo ">>Delete old file(s): \"$link_file\""
-        echo $link_file
+        echo $DEBUG_STR" Delete old file(s): \"$link_file\""
         rm $link_file
     fi
 
     ln -s $source_file $link_file
-
-    echo "Complete Update: \"$source_file -> $link_file\""
-    echo 
 }
 
 source_file="$PWD/bash_aliases"
