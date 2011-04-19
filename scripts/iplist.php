@@ -32,8 +32,6 @@ if (!file_exists($ip_data_file)) {
 if (isset($_REQUEST['op'])) {
     // get operation type
     $op = $_REQUEST['op'];
-    // get host id
-    $host_id = $_REQUEST['id'];
 
     // load registered data
     $fp = fopen($ip_data_file, 'r');
@@ -47,6 +45,9 @@ if (isset($_REQUEST['op'])) {
 
     // register the host id and update host ip address
     if ($op === 'reg' && isset($_REQUEST['id'])) {
+        // get host id
+        $host_id = $_REQUEST['id'];
+    
         // remote ip address (http client ip address)
         $remote_ip = $_SERVER['REMOTE_ADDR'];
 
@@ -63,6 +64,9 @@ if (isset($_REQUEST['op'])) {
 
     // get host ip
     if ($op === 'read' && isset($_REQUEST['id'])) {
+        // get host id
+        $host_id = $_REQUEST['id'];
+
         if (array_key_exists($host_id, $data)) {
             echo $host_id . ':' . $data[$host_id];
         } else {
