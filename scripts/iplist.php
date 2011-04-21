@@ -49,7 +49,7 @@ if (isset($_REQUEST['op'])) {
         $host_id = $_REQUEST['id'];
     
         // remote ip address (http client ip address)
-        $remote_ip = $_SERVER['REMOTE_ADDR'];
+        $remote_ip = getip();
 
         $data[$host_id] = $remote_ip;
 
@@ -86,4 +86,17 @@ if (isset($_REQUEST['op'])) {
 } else {
     // echo some messages.
     echo 'This is a funny joke.';
+}
+
+function getip()
+{
+    if (isset($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } else if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+
+    return $ip;
 }
