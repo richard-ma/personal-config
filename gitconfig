@@ -13,6 +13,7 @@
 	ci = commit -a
 	w = whatchanged
     pom = push origin master
+    fomu = fetch origin master:update
 [diff]
 	renamelimit = 0
 [color]
