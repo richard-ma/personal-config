@@ -15,6 +15,14 @@
     pom = push origin master
 [diff]
 	renamelimit = 0
+[merge]
+    tool = vimdiff
+[mergetool "vimdiff"]
+    cmd = "vim --noplugin \"$PWD/$MERGED\" \
+        +\":split $PWD/$REMOTE\" +\":set buftype=nowrite\" \
+        +\":vertical diffsplit $PWD/$LOCAL\" +\":set buftype=nowrite\" \
+        +\":vertical diffsplit $PWD/$BASE\" +\":set buftype=nowrite\" \
+        +\":wincmd l\""
 [color]
     ui = true
 	diff = auto
