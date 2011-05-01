@@ -9,11 +9,13 @@
 	user = richard-ma
 	token = 55e3f4eb9d3ec2db788921d6bd0c9697
 [alias]
-	st = status -s
-	ci = commit -a
+	st = status
+	ci = commit
 	w = whatchanged
     pom = push origin master
-    fomu = fetch origin master:update
+    f = fetch origin master:update
+    mu = merge update
+    du = branch -d update
 [diff]
 	renamelimit = 0
 [merge]
