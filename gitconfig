@@ -12,9 +12,9 @@
 	st = status
 	ci = commit
 	w = whatchanged
-    pom = push origin master
-    f = fetch origin master:update
-    mu = merge update
+    pom = push -v origin master
+    fu = fetch -v origin master:update
+    mu = merge -v update
     du = branch -d update
 [diff]
 	renamelimit = 0
