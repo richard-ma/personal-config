@@ -47,10 +47,6 @@
 "       Makes it easy to get an overview of buffers:
 "           info -> :e ~/.vim_runtime/plugin/minibufexpl.vim
 "
-"     > yankring.vim - http://www.vim.org/scripts/script.php?script_id=1234
-"       Emacs's killring, useful when using the clipboard:
-"           info -> :help yankring
-"
 "     > surround.vim - http://www.vim.org/scripts/script.php?script_id=1697
 "       Makes it easy to work with surrounding text:
 "           info -> :help surround
