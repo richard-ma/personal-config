@@ -43,4 +43,8 @@ source_file="$PWD/bin"
 target_file="$HOME/bin"
 do_update $source_file $target_file
 
+source_file="$PWD/defaults.list"
+target_file="$HOME/.local/share/applications/defaults.list"
+do_update $source_file $target_file
+
 echo 'You must exit this shell and login again to enable new configuration(s).'
