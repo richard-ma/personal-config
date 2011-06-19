@@ -9,14 +9,13 @@ servers = (
   }
 );
 
-chatnets = {
-  FREENODE = {
-    type = "IRC";
-  };
-};
+chatnets = { FREENODE = { type = "IRC"; }; };
 
 channels = (
-  { name = "#ubuntu-cn"; chatnet = "FREENODE"; autojoin = "yes"; }
+  { name = "#ubuntu-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
+  { name = "#debian-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
+  { name = "#gentoo-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
+  { name = "#debian"; chatnet = "FREENODE"; autojoin = "yes"; }
 );
 
 aliases = {
