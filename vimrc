@@ -163,8 +163,8 @@ if has("gui_running")
   set guioptions-=R
 endif
 
-"set t_Co=256
-"set background=dark
+set t_Co=256
+set background=dark
 colorscheme peaksea
 
 set encoding=utf8
