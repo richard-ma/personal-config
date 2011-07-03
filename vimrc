@@ -523,6 +523,9 @@ map <leader>pp :setlocal paste!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Richard Ma's configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Mouse settings
+set mouse=a
+
 " Shortcut for generating ctags
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
