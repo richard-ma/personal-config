@@ -15,6 +15,7 @@ function do_update()
     ln -s $source_file $link_file
 }
 
+# bashrc and bash_aliases
 source_file="$PWD/bash_aliases"
 target_file="$HOME/.bash_aliases"
 do_update $source_file $target_file
@@ -22,7 +23,9 @@ do_update $source_file $target_file
 source_file="$PWD/bashrc"
 target_file="$HOME/.bashrc"
 do_update $source_file $target_file
+echo 'You must exit this shell and login again to enable new configuration(s).'
 
+# vim settings
 source_file="$PWD/vimrc"
 target_file="$HOME/.vimrc"
 do_update $source_file $target_file
@@ -31,16 +34,24 @@ source_file="$PWD/vim"
 target_file="$HOME/.vim"
 do_update $source_file $target_file
 
+# git settings
 source_file="$PWD/gitconfig"
 target_file="$HOME/.gitconfig"
 do_update $source_file $target_file
 
+# launchpad settings
 source_file="$PWD/dput.cf"
 target_file="$HOME/.dput.cf"
 do_update $source_file $target_file
 
+# custom commands
 source_file="$PWD/bin"
 target_file="$HOME/bin"
+do_update $source_file $target_file
+
+# irssi settings
+source_file="$PWD/irssi"
+target_file="$HOME/.irssi"
 do_update $source_file $target_file
 
 file="$HOME/.local/share/applications/mimeapps.list"
@@ -52,4 +63,3 @@ source_file="$PWD/defaults.list"
 target_file="$HOME/.local/share/applications/defaults.list"
 do_update $source_file $target_file
 
-echo 'You must exit this shell and login again to enable new configuration(s).'

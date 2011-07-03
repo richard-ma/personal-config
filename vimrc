@@ -165,7 +165,7 @@ endif
 
 set t_Co=256
 set background=dark
-colorscheme wombat256mod
+colorscheme peaksea
 
 set encoding=utf8
 try
@@ -430,6 +430,7 @@ map <Leader>wn <Plug>VimwikiNextLink
 map <Leader>wp <Plug>VimwikiPrevLink
 map <Leader>wd <Plug>VimwikiDeleteLink
 map <Leader>wr <Plug>VimwikiRenameLink
+map <leader>wm <Plug>VimwikiToggleListItem
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Cope

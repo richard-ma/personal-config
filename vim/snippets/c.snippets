@@ -1,7 +1,9 @@
 # main()
 snippet main
 	int main(int argc, const char *argv[]) {
+
 		${1}
+
 		return 0;
 	}
 # #include <...>
@@ -12,15 +14,15 @@ snippet Inc
 	#include "${1:`Filename("$1.h")`}"${2}
 # #ifndef ... #define ... #endif
 snippet Def
-	#ifndef $1
+	#ifndef ${1:SYMBOL}
 	#define ${1:SYMBOL} ${2:value}
-	#endif${3}
+	#endif${3} /* __endif ${1:SYMBOL}__ */
 snippet def
 	#define  ${1:SYMBOL} ${2:value}
 snippet ifdef
 	#ifdef ${1:FOO}
 		${2:#define }
-	#endif
+	#endif /* __endif ${1:FOO}__ */
 snippet #if
 	#if ${1:FOO}
 		${2}
