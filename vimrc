@@ -600,3 +600,7 @@ let g:Tlist_Exit_OnlyWindow = 1
 let g:Tlist_Show_One_File = 1
 let g:Tlist_GainFocus_On_ToggleOpen = 1
 let g:Tlist_Sort_type = "name"
+
+"SnipMate configurations
+let g:snips_author = 'Richard Ma'
+let g:snips_email  = 'richard.ma.19850509@gmail.com'
