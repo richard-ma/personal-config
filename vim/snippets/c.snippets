@@ -1,5 +1,33 @@
+#######################################
+## Comments
+#######################################
+# File Comment
+snippet filec
+	/*****************************************
+	 * Filename: ${1:`Filename()`}
+	 * Author:   ${2:`g:snips_author`}
+	 * E-Mail:   ${3:`g:snips_email`}
+	 * Date:     ${4:`system("date +%Y-%m-%d")`}
+	 * Description: ${5}
+	 ****************************************/
+	 
+	${6}
+snippet funcc
+	/*****************************************
+	 * Function name: $1
+	 * Params: $2
+	 * Return: $3
+	 * Descripction: ${4}
+	 ****************************************/
+	${3:void} ${1:function_name} (${2:int a}) {
+		${5:/* code */}
+	}
+#######################################
 # main()
 snippet main
+	/*****************************************
+	 * Main Function
+	 ****************************************/
 	int main(int argc, const char *argv[]) {
 
 		${1}
@@ -104,70 +132,11 @@ snippet tde
 # unfortunately version this isn't as nice as TextMates's, given the lack of a
 # dynamic `...`
 snippet pr
-	printf("${1:%s}\n"${2});${3}
+	printf("${1:%s}"${2});${3}
 # fprintf (again, this isn't as nice as TextMate's version, but it works)
 snippet fpr
-	fprintf(${1:stderr}, "${2:%s}\n"${3});${4}
+	fprintf(${1:stderr}, "${2:%s}"${3});${4}
 snippet .
 	[${1}]${2}
 snippet un
 	unsigned
-# ###################################################################
-# Linux c standard functions
-# ###################################################################
-snippet isalnum
-	isalnum(${1:int c})${2:;}
-snippet isalpha
-	isalpha(${1:int c})${2:;}
-snippet isascii
-	isascii(${1:int c})${2:;}
-snippet iscntrl
-	iscntrl(${1:int c})${2:;}
-snippet isdigit
-	isdigit(${1:int c})${2:;}
-snippet isgraph
-	isgraph(${1:int c})${2:;}
-snippet islower
-	islower(${1:int c})${2:;}
-snippet isprint
-	isprint(${1:int c})${2:;}
-snippet isspace
-	isspace(${1:int c})${2:;}
-snippet ispunct
-	ispunct(${1:int c})${2:;}
-snippet isupper
-	isupper(${1:int c})${2:;}
-snippet isxdigit
-	isxdigit(${1:int c})${2:;}
-snippet atof
-	atof(${1:const char *nptr})${2:;}
-snippet atoi
-	atoi(${1:const char *nptr})${2:;}
-snippet atol
-	atol(${1:const char *nptr})${2:;}
-snippet gcvt
-	gcvt(${1:double number}, ${2:size_t ndigit}, ${3:char *buf})${4:;}
-snippet strtod
-	strtod(${1:const char *nptr}, ${2:char **endptr})${3:;}
-snippet strtol
-	strtol(${1:const char *nptr}, ${2:char **endptr}, ${3:int base})${4:;}
-snippet strtoul
-	strtoul(${1:const char *nptr}, ${2:char **endptr}, ${3:int base})${4:;}
-snippet toascii
-	toascii(${1:int c})${2:;}
-snippet tolower
-	tolower(${1:int c})${2:;}
-snippet toupper
-	toupper(${1:int c})${2:;}
-snippet calloc
-	calloc(${1:size_t nmemb}, ${2:size_t size})${3:;}
-snippet free
-	free(${1:void *ptr})${2:;}
-snippet getpagesize
-	getpagesize()${1:;}
-snippet malloc
-	malloc(${1:size_t size})${2:;}
-snippet mmap
-	mmap(${1:void *start}, ${2:size_t length}, ${3:int prot}, ${4:int flags}, ${5:int fd}, ${6:off_t offsize})${7:;}
-snippet munmap
-	munmap(${1:void *start}, ${2:size_t length})${3:;}
