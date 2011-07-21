@@ -533,13 +533,9 @@ map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " Load tags for standard C and UNIX
 au FileType c set tags+=~/.vim/tags_stdc
 
-"Python related config
-au FileType python set makeprg=python\ %
-map <F5> :make<CR>
-
 "Key mapping for compiling and running C programs
-au FileType c map <F6> :!gcc -Wall % -o %<<CR>
-au FileType c map <F7> :!./%<<CR>
+au FileType c map <F6> :!gcc -Wall -lm % -o %<<CR>
+au FileType c map <F5> :!./%<<CR>
 
 if has("gui_running")
     "Maximize the window for GUI
@@ -556,10 +552,8 @@ nnoremap <Leader>r :%s/\<<C-r><C-w>\>/<C-r><C-w>
 "My Custom keys 
 noremap <C-i> <C-]>
 noremap <C-c> "+
-vnoremap <C-c> "+y
 noremap <C-a> ggVG
 noremap <C-x> <C-w>c
-noremap <C-q> :Bclose<cr>
 
 " Fuzzyfinder Key bindings
 let g:fuf_modesDisable = []
