@@ -564,7 +564,7 @@ noremap <C-q> :Bclose<cr>
 " Fuzzyfinder Key bindings
 let g:fuf_modesDisable = []
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-let g:fuf_enumeratingLimit = 30
+let g:fuf_enumeratingLimit = 20
 
 nnoremap <silent> sf     :FufCoverageFile!<CR>
 nnoremap <silent> sF     :FufFile!<CR>
