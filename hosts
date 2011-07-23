@@ -1,0 +1,88 @@
+127.0.0.1	localhost
+127.0.1.1	richardma-laptop
+
+# Google
+203.208.46.144 www.google.com
+203.208.46.144 www.google.com.hk
+203.208.46.144 encrypted.google.com
+203.208.46.144 encrypted-tbn0.google.com
+203.208.46.144 encrypted-tbn1.google.com
+203.208.46.144 encrypted-tbn2.google.com
+203.208.46.144 encrypted-tbn3.google.com
+203.208.46.144 www.l.google.com
+203.208.46.144 www0.l.google.com
+203.208.46.144 www1.l.google.com
+203.208.46.144 www3.l.google.com
+203.208.46.144 suggestqueries.google.com          #搜索建议
+203.208.46.144 suggestqueries.l.google.com        #搜索建议
+203.208.46.144 clients0.google.com                #客户端服务器
+203.208.46.144 clients1.google.com                #客户端服务器
+203.208.46.144 clients2.google.com                #客户端服务器
+203.208.46.144 clients3.google.com                #客户端服务器
+203.208.46.144 clients4.google.com                #客户端服务器
+203.208.46.144 clients.l.google.com
+203.208.46.144 clients1.google.com.hk             # .com.hk 搜索建议
+203.208.46.144 clients-china.l.google.com
+203.208.46.144 linkhelp.clients.google.com        ##Google图片搜索
+203.208.46.128 images.google.com
+203.208.46.128 images.l.google.com
+203.208.46.128 tbn0.google.com
+203.208.46.128 tbn1.google.com
+203.208.46.128 tbn2.google.com
+203.208.46.128 tbn3.google.com
+203.208.46.128 tbn4.google.com
+203.208.46.128 tbn5.google.com
+203.208.46.128 tbn6.google.com
+#Google文档#
+203.208.46.128 docs.google.com
+203.208.46.128 docs0.google.com
+203.208.46.128 docs1.google.com
+203.208.46.128 docs2.google.com
+203.208.46.128 docs3.google.com
+203.208.46.128 docs4.google.com
+203.208.46.128 docs5.google.com
+203.208.46.128 docs6.google.com
+203.208.46.128 docs7.google.com
+203.208.46.128 docs8.google.com
+203.208.46.128 docs9.google.com
+203.208.46.128 0.docs.google.com
+203.208.46.128 1.docs.google.com
+203.208.46.128 2.docs.google.com
+203.208.46.128 3.docs.google.com
+203.208.46.128 4.docs.google.com
+203.208.46.128 5.docs.google.com
+203.208.46.128 6.docs.google.com
+203.208.46.128 7.docs.google.com
+203.208.46.128 8.docs.google.com
+203.208.46.128 9.docs.google.com
+203.208.46.128 spreadsheet.google.com
+203.208.46.128 spreadsheets.google.com
+203.208.46.128 spreadsheets0.google.com
+203.208.46.128 spreadsheets1.google.com
+203.208.46.128 spreadsheets2.google.com
+203.208.46.128 spreadsheets3.google.com
+203.208.46.128 spreadsheets4.google.com
+203.208.46.128 spreadsheets5.google.com
+203.208.46.128 spreadsheets6.google.com
+203.208.46.128 spreadsheets7.google.com
+203.208.46.128 spreadsheets8.google.com
+203.208.46.128 spreadsheets9.google.com
+203.208.46.128 spreadsheets.l.google.com
+203.208.46.128 spreadsheets-china.l.google.com
+203.208.46.128 writely.google.com
+203.208.46.128 writely.l.google.com
+203.208.46.128 writely-com.l.google.com
+203.208.46.128 writely-china.l.google.com
+
+203.208.46.128 profiles.google.com
+203.208.46.128 plus.google.com
+203.208.46.128 docs.google.com
+203.208.46.128 groups.google.com
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
