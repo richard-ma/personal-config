@@ -79,6 +79,31 @@
 203.208.46.128 docs.google.com
 203.208.46.128 groups.google.com
 
+# twitter
+199.59.148.84 oauth.twitter.com
+199.59.148.84 twitter.com
+199.59.148.84 www.twitter.com
+199.59.148.84 api.twitter.com
+199.59.148.201 search.twitter.com
+199.59.148.139 userstream.twitter.com
+199.59.148.84 ssl.twitter.com
+199.59.148.84 status.twitter.com
+199.59.148.84 assets0.twitter.com
+199.59.148.84 assets1.twitter.com
+199.59.148.84 assets2.twitter.com
+199.59.148.84 assets3.twitter.com
+199.59.148.84 static.twitter.com
+184.29.36.124 platform.twitter.com
+219.76.10.138 platform0.twitter.com
+199.59.148.206 help.twitter.com
+199.59.148.206 support.twitter.com
+209.84.4.102 si0.twimg.com
+209.84.4.102 si1.twimg.com
+209.84.4.102 si2.twimg.com
+209.84.4.102 si3.twimg.com
+209.84.4.102 si4.twimg.com
+209.84.4.102 si5.twimg.com
+
 # The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
 fe00::0 ip6-localnet

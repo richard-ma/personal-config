@@ -38,7 +38,6 @@
 "    -> Cope
 "    -> Minibuffer plugin
 "    -> Omni complete functions
-"    -> Python section
 "    -> JavaScript section
 "
 "
@@ -553,7 +552,6 @@ nnoremap <Leader>r :%s/\<<C-r><C-w>\>/<C-r><C-w>
 noremap <C-i> <C-]>
 noremap <C-c> "+
 noremap <C-a> ggVG
-noremap <C-x> <C-w>c
 
 " Fuzzyfinder Key bindings
 let g:fuf_modesDisable = []
@@ -584,6 +582,9 @@ let g:use_zen_complete_tag = 1
 map <leader>tt :NERDTreeToggle<CR>
 let g:NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
+
+"NERD commenter
+map <leader>cb :'<,'>call NERDComment(1, 'sexy')<CR>
 
 "Taglist configurations
 map <leader>tl :TlistToggle<CR>
