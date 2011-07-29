@@ -11,7 +11,8 @@
 [alias]
 	st = status
 	ci = commit
-	w = whatchanged
+	wc = whatchanged
+    br = branch
     pom = push -v origin master
     fu = fetch -v origin master:update
     mu = merge -v update
