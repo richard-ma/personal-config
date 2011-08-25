@@ -90,30 +90,26 @@ ff02::3 ip6-allhosts
 203.208.46.160 groups.google.com
 
 # twitter
-199.59.149.210 t.co
-199.59.148.15 oauth.twitter.com
-199.59.148.15 twitter.com
-199.59.148.15 www.twitter.com
-199.59.148.15 api.twitter.com
-199.59.148.201 search.twitter.com
-199.59.148.15 userstream.twitter.com
-199.59.148.15 ssl.twitter.com
-199.59.148.15 status.twitter.com
-199.59.148.15 assets0.twitter.com
-199.59.148.15 assets1.twitter.com
-199.59.148.15 assets2.twitter.com
-199.59.148.15 assets3.twitter.com
-199.59.148.15 static.twitter.com
+199.59.149.208 oauth.twitter.com
+199.59.149.208 twitter.com
+199.59.149.208 www.twitter.com
+199.59.149.208 api.twitter.com
+199.59.149.208 search.twitter.com
+199.59.149.208 userstream.twitter.com
+199.59.149.208 ssl.twitter.com
+199.59.149.208 status.twitter.com
+199.59.149.208 assets0.twitter.com
+199.59.149.208 assets1.twitter.com
+199.59.149.208 assets2.twitter.com
+199.59.149.208 assets3.twitter.com
+199.59.149.208 static.twitter.com
 184.29.36.124 platform.twitter.com
 219.76.10.138 platform0.twitter.com
 199.59.148.206 help.twitter.com
 199.59.148.206 support.twitter.com
-209.84.4.102 si0.twimg.com
-209.84.4.102 si1.twimg.com
-209.84.4.102 si2.twimg.com
-209.84.4.102 si3.twimg.com
-209.84.4.102 si4.twimg.com
-209.84.4.102 si5.twimg.com
+74.86.224.44 twitpic.com
+
+199.59.149.210 t.co
 
 # Youtube hosts
 203.208.46.245 youtube.com
