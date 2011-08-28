@@ -34,6 +34,15 @@ source_file="$PWD/vim"
 target_file="$HOME/.vim"
 do_update $source_file $target_file
 
+# emacs settings
+source_file="$PWD/emacsrc"
+target_file="$HOME/.emacs"
+do_update $source_file $target_file
+
+source_file="$PWD/emacs"
+target_file="$HOME/.emacsd"
+do_update $source_file $target_file
+
 # git settings
 source_file="$PWD/gitconfig"
 target_file="$HOME/.gitconfig"
