@@ -1,3 +1,0 @@
-(setq load-path (cons "~/.emacsd/plugins/org-7.7/lisp" load-path))
-(setq load-path (cons "~/.emacsd/plugins/org-7.7/contrib/lisp" load-path))
-(require 'org-install)
