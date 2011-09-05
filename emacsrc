@@ -1,0 +1,50 @@
+;; disable startup message
+(setq inhibit-startup-message t)
+
+;; disable toolbar
+(tool-bar-mode nil)
+
+;; frame title
+(setq frame-title-format "%b@Emacs")
+
+;; default column fill
+(setq default-fill-column 80)
+
+;; default working directory
+(setq default-directroy "~/")
+
+;; default mode
+(setq default-major-mode 'text-mode)
+
+;; tab settings
+(setq c-basic-offset 4)
+(setq default-tab-width 4)
+
+;; display date and time
+(display-time)
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+(setq display-time-use-mail-icon t)
+(setq display-time-interval 10)
+
+;; backup file nil
+(setq make-backup-files nil)
+
+;; color theme
+(add-to-list 'load-path "~/.emacsd/color-theme-6.6.0/")
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-subtle-hacker)
+
+;; scroll settings
+(setq scroll-margin 3
+	  scroll-conservatively 10000)
+
+;;;;;;;;;;;;;;;;;;;;
+;; C style settings
+;;;;;;;;;;;;;;;;;;;;
+
+;; C style
+(add-hook 'c-mode-hook
+		  '(lambda ()
+		  (c-set-style "k&r")))
