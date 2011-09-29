@@ -599,3 +599,6 @@ let g:Tlist_Sort_type = "name"
 "SnipMate configurations
 let g:snips_author = 'Richard Ma'
 let g:snips_email  = 'richard.ma.19850509@gmail.com'
+
+"neocomplcache - automatic complete
+let g:neocomplcache_enable_at_startup = 1
