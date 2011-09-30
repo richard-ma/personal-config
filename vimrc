@@ -461,8 +461,8 @@ map <F4> :TMiniBufExplorer<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omni complete functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteJS
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
@@ -609,5 +609,5 @@ let g:neocomplcache_enable_auto_select = 1
 "neocomplcache dictionary settings
 let g:neocomplcache_dictionary_filetype_lists = {
     \   'default' : '~/.vim/dict/user_info.dict',
-    \   'c' : '~/.vim/dict/tags_stdc.dict'
+    \   'c'       : '~/.vim/dict/tags_stdc.dict'
 \ }
