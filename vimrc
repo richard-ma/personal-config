@@ -602,3 +602,4 @@ let g:snips_email  = 'richard.ma.19850509@gmail.com'
 
 "neocomplcache - automatic complete
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 0

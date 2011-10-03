@@ -109,6 +109,10 @@ if [ -f ~/bin ]; then
     export PATH=$PATH:~/bin/
 fi
 
+if [ -f ~/Projects ]; then
+    export CDPATH=$CDPATH:~/Projects/
+fi
+
 # dh_make
 export DEBEMAIL="richard.ma.19850509@gmail.com"
 export DEBFULLNAME="Richard Ma"
