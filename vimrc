@@ -461,8 +461,11 @@ map <F4> :TMiniBufExplorer<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omni complete functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+set omnifunc=syntaxcomplete#Complete
 
+let OmniCpp_MayCompleteDot = 1
+let OmniCpp_MayCompleteArrow = 1
+let OmniCpp_MayCompleteScope = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
@@ -530,7 +533,7 @@ set mouse=a
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Load tags for standard C and UNIX
-au FileType c set tags+=~/.vim/tags_stdc
+"au FileType c set tags+=~/.vim/tags_stdc
 
 "Key mapping for compiling and running C programs
 au FileType c map <F6> :!gcc -Wall -lm % -o %<<CR>
@@ -568,17 +571,17 @@ nnoremap <silent> si     :FufBookmarkDir<CR>
 nnoremap <silent> sI     :FufBookmarkDirAdd<CR>
 nnoremap <silent> sq     :FufQuickfix<CR>
 
-"Vim WIKI configurations
+"Vim WIKI
 let g:vimwiki_list = [{'path': '~/Personal/wiki/src', 'path_html': '~/Personal/wiki/', 'auto_export': 1, 'html_header': '~/Personal/wiki/src/header.tpl', 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
 let g:vimwiki_camel_case = 0
 let g:vimwiki_html_header_numbering = 2
 let g:vimwiki_html_header_numbering_sym = '.'
 
-"Zencoding configurations
+"Zencoding
 let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
 let g:use_zen_complete_tag = 1
 
-"NERD tree configurations
+"NERD tree
 map <leader>tt :NERDTreeToggle<CR>
 let g:NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
@@ -586,7 +589,7 @@ let g:NERDTreeHighlightCursorline = 1
 "NERD commenter
 map <leader>cb :'<,'>call NERDComment(1, 'sexy')<CR>
 
-"Taglist configurations
+"Taglist
 map <leader>tl :TlistToggle<CR>
 let g:Tlist_Ctags_Cmd = '/usr/bin/ctags'
 let g:Tlist_Auto_Highlight_Tag = 1
@@ -596,10 +599,18 @@ let g:Tlist_Show_One_File = 1
 let g:Tlist_GainFocus_On_ToggleOpen = 1
 let g:Tlist_Sort_type = "name"
 
-"SnipMate configurations
-let g:snips_author = 'Richard Ma'
-let g:snips_email  = 'richard.ma.19850509@gmail.com'
+"SnipMate
 
-"neocomplcache - automatic complete
+"neocomplcache
 let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 0
+let g:neocomplcache_auto_completion_start_length = 3
+let g:neocomplcache_min_keyword_length = 3
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_enable_ignore_case = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_auto_select = 1
+"neocomplcache dictionary settings
+let g:neocomplcache_dictionary_filetype_lists = {
+    \   'default' : '~/.vim/dict/user_info.dict',
+    \   'c'       : '~/.vim/dict/tags_stdc.dict'
+\ }
