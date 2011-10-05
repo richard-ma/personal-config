@@ -150,6 +150,8 @@ set shell=/bin/bash
 
 " Show line number
 set nu
+" Show underline on column 81 and more by c/cpp/python
+au BufRead,BufNewFile *.c,*.cpp,*.py match UnderLined /.\%>81v/
 
 if has("gui_running")
   set guifont=Monaco\ 9
@@ -198,11 +200,6 @@ set tw=500
 set ai "Auto indent
 set si "Smart indet
 set nowrap "Do not wrap lines
-
-map <leader>t2 :setlocal shiftwidth=2<cr>
-map <leader>t4 :setlocal shiftwidth=4<cr>
-map <leader>t8 :setlocal shiftwidth=4<cr>
-
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -390,7 +387,6 @@ vnoremap $e <esc>`>a"<esc>`<i"<esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -419,17 +415,6 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 
 set guitablabel=%t
-
-"Vimwiki mappings
-map <Leader>wf <Plug>VimwikiFollowLink
-map <Leader>we <Plug>VimwikiSplitLink
-map <Leader>wq <Plug>VimwikiVSplitLink
-map <Leader>wb <Plug>VimwikiGoBackLink
-map <Leader>wn <Plug>VimwikiNextLink
-map <Leader>wp <Plug>VimwikiPrevLink
-map <Leader>wd <Plug>VimwikiDeleteLink
-map <Leader>wr <Plug>VimwikiRenameLink
-map <leader>wm <Plug>VimwikiToggleListItem
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Cope
@@ -535,9 +520,12 @@ map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " Load tags for standard C and UNIX
 "au FileType c set tags+=~/.vim/tags_stdc
 
-"Key mapping for compiling and running C programs
-au FileType c map <F6> :!gcc -Wall -lm % -o %<<CR>
-au FileType c map <F5> :!./%<<CR>
+"Key mapping for compiling and running C programs.
+autocmd FileType c,cpp map <F6> :!gcc -Wall -lm % -o %<<CR>
+autocmd FileType c,cpp map <F5> :!./%<<CR>
+"Key mapping for compiling and watching LaTeX scripts.
+autocmd FileType tex map <F6> :!pdflatex %<CR>
+autocmd FileType tex map <F5> :!evince %<.pdf<CR>
 
 if has("gui_running")
     "Maximize the window for GUI
@@ -571,11 +559,32 @@ nnoremap <silent> si     :FufBookmarkDir<CR>
 nnoremap <silent> sI     :FufBookmarkDirAdd<CR>
 nnoremap <silent> sq     :FufQuickfix<CR>
 
-"Vim WIKI
-let g:vimwiki_list = [{'path': '~/Personal/wiki/src', 'path_html': '~/Personal/wiki/', 'auto_export': 1, 'html_header': '~/Personal/wiki/src/header.tpl', 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
+"vimwiki
+let g:vimwiki_list = [{
+\ 'path': '~/Personal/wiki/src',
+\ 'path_html': '~/Personal/wiki/',
+\ 'auto_export': 1,
+\ 'diary_link_count': 5,
+\ 'html_header': '~/Personal/wiki/src/header.tpl',
+\ 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
+"vimwiki global options
 let g:vimwiki_camel_case = 0
 let g:vimwiki_html_header_numbering = 2
 let g:vimwiki_html_header_numbering_sym = '.'
+let g:vimwiki_folding = 1
+let g:vimwiki_fold_lists = 1
+"vimwiki mappings
+map <Leader>wf <Plug>VimwikiFollowLink
+map <Leader>we <Plug>VimwikiSplitLink
+map <Leader>wq <Plug>VimwikiVSplitLink
+map <Leader>wb <Plug>VimwikiGoBackLink
+map <Leader>wn <Plug>VimwikiNextLink
+map <Leader>wp <Plug>VimwikiPrevLink
+map <Leader>wd <Plug>VimwikiDeleteLink
+map <Leader>wr <Plug>VimwikiRenameLink
+map <leader>wm <Plug>VimwikiToggleListItem
+"Calendar
+map <Leader>wc :Calendar<CR>
 
 "Zencoding
 let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
