@@ -461,11 +461,24 @@ map <F4> :TMiniBufExplorer<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omni complete functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set omnifunc=syntaxcomplete#Complete
+if has("autocmd") && exists("+omnifunc")
+    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
+    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete 
+    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags 
 
+    autocmd FileType *
+        \   if &omnifunc == "" |
+        \       setlocal omnifunc=syntaxcomplete#Complete |       
+        \   endif
+endif
+
+let OmniCpp_NamespaceSearch = 2
 let OmniCpp_MayCompleteDot = 1
 let OmniCpp_MayCompleteArrow = 1
 let OmniCpp_MayCompleteScope = 1
+let OmniCpp_SelectFirstItem = 2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
@@ -530,10 +543,11 @@ map <leader>pp :setlocal paste!<cr>
 set mouse=a
 
 " Shortcut for generating ctags
-map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Load tags for standard C and UNIX
 "au FileType c set tags+=~/.vim/tags_stdc
+"au FileType c set tags+=/usr/include/tags
 
 "Key mapping for compiling and running C programs
 au FileType c map <F6> :!gcc -Wall -lm % -o %<<CR>
@@ -600,6 +614,8 @@ let g:Tlist_GainFocus_On_ToggleOpen = 1
 let g:Tlist_Sort_type = "name"
 
 "SnipMate
+let g:snips_author = "Richard Ma (richard_ma)"
+let g:snips_email = "richard.ma.19850509@gmail.com"
 
 "neocomplcache
 let g:neocomplcache_enable_at_startup = 1
