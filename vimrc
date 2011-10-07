@@ -79,7 +79,7 @@ call pathogen#runtime_append_all_bundles()
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 fun! MySys()
-   return "linux"
+return "linux"
 endfun
 
 " Sets how many lines of history VIM has to remember
@@ -98,15 +98,12 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Fast saving
-nmap <leader>w :w!<cr>
+nmap <Leader>w :w<CR>
 
 " Fast editing of the .vimrc
-map <leader>e :e! ~/.vimrc<cr>
-
+map <Leader>e :e! ~/.vimrc<CR>
 " When vimrc is edited, reload it
-autocmd! bufwritepost .vimrc source ~/.vimrc
-map <leader>pp :setlocal paste!<cr>
-
+autocmd! bufwritepost ~/.vimrc source ~/.vimrc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -154,14 +151,14 @@ set nu
 au BufRead,BufNewFile *.c,*.cpp,*.py match UnderLined /.\%>81v/
 
 if has("gui_running")
-  set guifont=Monaco\ 9
-  set guifontwide=iYahei\ 9
-  set guioptions-=T
-  set guioptions-=m
-  set guioptions-=l
-  set guioptions-=L
-  set guioptions-=r
-  set guioptions-=R
+set guifont=Monaco\ 9
+set guifontwide=iYahei\ 9
+set guioptions-=T
+set guioptions-=m
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R
 endif
 
 set t_Co=256
@@ -170,7 +167,7 @@ colorscheme peaksea
 
 set encoding=utf8
 try
-    lang en_US
+lang en_US
 catch
 endtry
 
@@ -215,29 +212,29 @@ map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 
 
 function! CmdLine(str)
-    exe "menu Foo.Bar :" . a:str
-    emenu Foo.Bar
-    unmenu Foo
+exe "menu Foo.Bar :" . a:str
+emenu Foo.Bar
+unmenu Foo
 endfunction 
 
 " From an idea by Michael Naumann
 function! VisualSearch(direction) range
-    let l:saved_reg = @"
-    execute "normal! vgvy"
+let l:saved_reg = @"
+execute "normal! vgvy"
 
-    let l:pattern = escape(@", '\\/.*$^~[]')
-    let l:pattern = substitute(l:pattern, "\n$", "", "")
+let l:pattern = escape(@", '\\/.*$^~[]')
+let l:pattern = substitute(l:pattern, "\n$", "", "")
 
-    if a:direction == 'b'
-        execute "normal ?" . l:pattern . "^M"
-    elseif a:direction == 'gv'
-        call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.')
-    elseif a:direction == 'f'
-        execute "normal /" . l:pattern . "^M"
-    endif
+if a:direction == 'b'
+    execute "normal ?" . l:pattern . "^M"
+elseif a:direction == 'gv'
+    call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.')
+elseif a:direction == 'f'
+    execute "normal /" . l:pattern . "^M"
+endif
 
-    let @/ = l:pattern
-    let @" = l:saved_reg
+let @/ = l:pattern
+let @" = l:saved_reg
 endfunction
 
 
@@ -263,29 +260,29 @@ cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
 func! Cwd()
-  let cwd = getcwd()
-  return "e " . cwd 
+let cwd = getcwd()
+return "e " . cwd 
 endfunc
 
 func! DeleteTillSlash()
-  let g:cmd = getcmdline()
-  if MySys() == "linux" || MySys() == "mac"
-    let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*", "\\1", "")
-  else
-    let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\]\\).*", "\\1", "")
-  endif
-  if g:cmd == g:cmd_edited
-    if MySys() == "linux" || MySys() == "mac"
-      let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*/", "\\1", "")
-    else
-      let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\\]\\).*\[\\\\\]", "\\1", "")
-    endif
-  endif   
-  return g:cmd_edited
+let g:cmd = getcmdline()
+if MySys() == "linux" || MySys() == "mac"
+let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*", "\\1", "")
+else
+let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\]\\).*", "\\1", "")
+endif
+if g:cmd == g:cmd_edited
+if MySys() == "linux" || MySys() == "mac"
+  let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*/", "\\1", "")
+else
+  let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\\]\\).*\[\\\\\]", "\\1", "")
+endif
+endif   
+return g:cmd_edited
 endfunc
 
 func! CurrentFileDir(cmd)
-  return a:cmd . " " . expand("%:p:h") . "/"
+return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
 
 
@@ -322,28 +319,28 @@ map <leader>cd :cd %:p:h<cr>
 
 command! Bclose call <SID>BufcloseCloseIt()
 function! <SID>BufcloseCloseIt()
-   let l:currentBufNum = bufnr("%")
-   let l:alternateBufNum = bufnr("#")
+let l:currentBufNum = bufnr("%")
+let l:alternateBufNum = bufnr("#")
 
-   if buflisted(l:alternateBufNum)
-     buffer #
-   else
-     bnext
-   endif
+if buflisted(l:alternateBufNum)
+ buffer #
+else
+ bnext
+endif
 
-   if bufnr("%") == l:currentBufNum
-     new
-   endif
+if bufnr("%") == l:currentBufNum
+ new
+endif
 
-   if buflisted(l:currentBufNum)
-     execute("bdelete! ".l:currentBufNum)
-   endif
+if buflisted(l:currentBufNum)
+ execute("bdelete! ".l:currentBufNum)
+endif
 endfunction
 
 " Specify the behavior when switching between buffers 
 try
-  set switchbuf=usetab
-  set stal=1
+set switchbuf=usetab
+set stal=1
 catch
 endtry
 
@@ -359,16 +356,16 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ 
 
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
-    return curdir
+let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+return curdir
 endfunction
 
 function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    else
-        return ''
-    endif
+if &paste
+    return 'PASTE MODE  '
+else
+    return ''
+endif
 endfunction
 
 
@@ -400,17 +397,17 @@ vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 if MySys() == "mac"
-  nmap <D-j> <M-j>
-  nmap <D-k> <M-k>
-  vmap <D-j> <M-j>
-  vmap <D-k> <M-k>
+nmap <D-j> <M-j>
+nmap <D-k> <M-k>
+vmap <D-j> <M-j>
+vmap <D-k> <M-k>
 endif
 
 "Delete trailing white space, useful for Python ;)
 func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
+exe "normal mz"
+%s/\s\+$//ge
+exe "normal `z"
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 
@@ -521,11 +518,11 @@ map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 "au FileType c set tags+=~/.vim/tags_stdc
 
 "Key mapping for compiling and running C programs.
-autocmd FileType c,cpp map <F6> :!gcc -Wall -lm % -o %<<CR>
-autocmd FileType c,cpp map <F5> :!./%<<CR>
+au FileType c,cpp map <F6> :!gcc -Wall -lm % -o %<<CR>
+au FileType c,cpp map <F5> :!./%<<CR>
 "Key mapping for compiling and watching LaTeX scripts.
-autocmd FileType tex map <F6> :!pdflatex %<CR>
-autocmd FileType tex map <F5> :!evince %<.pdf<CR>
+au FileType tex map <F6> :!pdflatex %<CR>
+au FileType tex map <F5> :!evince %<.pdf >/dev/null 2>&1 &<CR>
 
 if has("gui_running")
     "Maximize the window for GUI
@@ -582,7 +579,7 @@ map <Leader>wn <Plug>VimwikiNextLink
 map <Leader>wp <Plug>VimwikiPrevLink
 map <Leader>wd <Plug>VimwikiDeleteLink
 map <Leader>wr <Plug>VimwikiRenameLink
-map <leader>wm <Plug>VimwikiToggleListItem
+map <Leader>wm <Plug>VimwikiToggleListItem
 "Calendar
 map <Leader>wc :Calendar<CR>
 
@@ -591,15 +588,15 @@ let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'ht
 let g:use_zen_complete_tag = 1
 
 "NERD tree
-map <leader>tt :NERDTreeToggle<CR>
+map <Leader>tt :NERDTreeToggle<CR>
 let g:NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
 
 "NERD commenter
-map <leader>cb :'<,'>call NERDComment(1, 'sexy')<CR>
+map <Leader>cb :'<,'>call NERDComment(1, 'sexy')<CR>
 
 "Taglist
-map <leader>tl :TlistToggle<CR>
+map <Leader>tl :TlistToggle<CR>
 let g:Tlist_Ctags_Cmd = '/usr/bin/ctags'
 let g:Tlist_Auto_Highlight_Tag = 1
 let g:Tlist_Use_Right_Window = 1
@@ -623,3 +620,6 @@ let g:neocomplcache_dictionary_filetype_lists = {
     \   'default' : '~/.vim/dict/user_info.dict',
     \   'c'       : '~/.vim/dict/tags_stdc.dict'
 \ }
+
+"surround
+xmap <Leader>s <Plug>Vsurround
