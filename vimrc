@@ -511,6 +511,9 @@ map <leader>pp :setlocal paste!<cr>
 " Mouse settings
 set mouse=a
 
+"--------------------------------------------------------------
+" About .c and .cpp
+"--------------------------------------------------------------
 " Shortcut for generating ctags
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
@@ -520,9 +523,18 @@ map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 "Key mapping for compiling and running C programs.
 au FileType c,cpp map <F6> :!gcc -Wall -lm % -o %<<CR>
 au FileType c,cpp map <F5> :!./%<<CR>
+
+"--------------------------------------------------------------
+" About tex 
+"--------------------------------------------------------------
 "Key mapping for compiling and watching LaTeX scripts.
 au FileType tex map <F6> :!pdflatex %<CR>
 au FileType tex map <F5> :!evince %<.pdf >/dev/null 2>&1 &<CR>
+
+"--------------------------------------------------------------
+" About vimwiki 
+"--------------------------------------------------------------
+au FileType vimwiki setl wrap
 
 if has("gui_running")
     "Maximize the window for GUI
