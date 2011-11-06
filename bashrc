@@ -15,6 +15,9 @@ shopt -s histappend
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+# user vi keybindings
+set -o vi
+
 # make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
@@ -45,20 +48,26 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[33;40m\]\u@\h - \d \t\[\033[00m\]\n\[\033[32;40m\]\w\[\033[00m\]\n \[\033[01;31m\]$?\[\033[00m\] >>\[\033[01;33m\]\$\[\033[00m\] '
+    PS1='\u@\H - \D{%F, %a %T}\n'
+    PS1=$PS1'Running Jobs: \j - Device: \l - Bash Version: \v\n'
+    PS1=$PS1'\W\n'
+    PS1=$PS1'>>\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h-\d \t:\w\n\$ '
+    PS1='\u@\H - \D{%F, %a %T}\n'
+    PS1=$PS1'Running Jobs: \j - Device: \l - Bash Version: \v\n'
+    PS1=$PS1'\W\n'
+    PS1=$PS1'>>\$ '
 fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
+#case "$TERM" in
+#xterm*|rxvt*)
+#    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+#    ;;
+#*)
+#    ;;
+#esac
 
 # Disable PC Speaker Beep
 setterm -blength 0

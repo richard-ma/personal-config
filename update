@@ -29,6 +29,10 @@ target_file="$HOME/.bashrc"
 do_update $source_file $target_file
 echo 'You must exit this shell and login again to enable new configuration(s).'
 
+source_file="$PWD/zshrc"
+target_file="$HOME/.zshrc"
+do_update $source_file $target_file
+
 # vim settings
 source_file="$PWD/vimrc"
 target_file="$HOME/.vimrc"
