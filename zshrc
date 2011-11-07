@@ -99,6 +99,10 @@ RPROMPT="$MY_YELLOW(%D{%a, %b%d %H:%M})"
 # 扩展文件名替换
 setopt extendedglob
 
+# 版本控制
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git svn
+
 # 命令别名
 alias ls='ls --color=always'
 alias ll='ls -lh'
