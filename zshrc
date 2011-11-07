@@ -87,7 +87,7 @@ done
 MY_NO_COLOUR="%{$terminfo[sgr0]%}"
 
 PROMPT="%(?.$MY_YELLOW.$MY_RED)>-------------------------------------------------------------------------------
-$MY_CYAN>($MY_BLUE%n@%M$MY_WHITE:$MY_GREEN%l$MY_CYAN)-(${MY_RED}Jobs$MY_WHITE:$MY_YELLOW%j$MY_CYAN)
+$MY_CYAN>($MY_BLUE%n@%M$MY_WHITE:$MY_GREEN%l$MY_CYAN)-(${MY_RED}jobs$MY_WHITE:$MY_YELLOW%j$MY_CYAN)
 $MY_CYAN>($MY_YELLOW%~$MY_CYAN)
 %(?.$MY_CYAN.$MY_RED)>>%# $MY_NO_COLOR"
 
@@ -108,9 +108,9 @@ alias l='ls -CF'
 alias grep='grep --color=always'
 
 # 路径别名
-hash -d fhlnoip="~/Projects/fhlnoip"
-hash -d config="~/Personal/config"
-hash -d wiki="~/Personal/wiki"
+hash -d fhlnoip="/home/richardma/Projects/fhlnoip"
+hash -d config="/home/richardma/Personal/config"
+hash -d wiki="/home/richardma/Personal/wiki"
 
 # Exports
 export EDITOR=vim
