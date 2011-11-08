@@ -1,107 +1,36 @@
-# 历史纪录
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=$HISTSIZE
-setopt hist_ignore_all_dups
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/Personal/config/zsh
 
-# 按键风格
-bindkey -v
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="richardma"
 
-# 自动补全功能
-setopt AUTO_LIST
-setopt AUTO_MENU
-#开启此选项，补全时会直接选中菜单项
-#setopt MENU_COMPLETE
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
 
-autoload -U compinit
-compinit
+# Comment this out to disable weekly auto-update checks
+DISABLE_AUTO_UPDATE="true"
 
-#自动补全缓存
-#zstyle ':completion::complete:*' use-cache on
-#zstyle ':completion::complete:*' cache-path .zcache
-#zstyle ':completion:*:cd:*' ignore-parents parent pwd
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
 
-#自动补全选项
-zstyle ':completion:*' verbose yes
-zstyle ':completion:*' menu select
-zstyle ':completion:*:*:default' force-list always
-zstyle ':completion:*' select-prompt '%SSelect:  lines: %L  matches: %M  [%p]'
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
 
-zstyle ':completion:*:match:*' original only
-zstyle ':completion::prefix-1:*' completer _complete
-zstyle ':completion:predict:*' completer _complete
-zstyle ':completion:incremental:*' completer _complete _correct
-zstyle ':completion:*' completer _complete _prefix _correct _prefix _match _approximate
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+# COMPLETION_WAITING_DOTS="true"
 
-#路径补全
-zstyle ':completion:*' expand 'yes'
-zstyle ':completion:*' squeeze-slashes 'yes'
-zstyle ':completion::complete:*' '\\'
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git svn vi-mode)
 
-#彩色补全菜单 
-eval $(dircolors -b) 
-export ZLSCOLORS="${LS_COLORS}"
-zmodload zsh/complist
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+source $ZSH/oh-my-zsh.sh
 
-#修正大小写
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
-#错误校正      
-zstyle ':completion:*' completer _complete _match _approximate
-zstyle ':completion:*:match:*' original only
-zstyle ':completion:*:approximate:*' max-errors 1 numeric
-
-#kill 命令补全      
-compdef pkill=killall
-zstyle ':completion:*:*:kill:*' menu yes select
-zstyle ':completion:*:*:*:*:processes' force-list always
-zstyle ':completion:*:processes' command 'ps -au$USER'
-
-#补全类型提示分组 
-zstyle ':completion:*:matches' group 'yes'
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*:options' description 'yes'
-zstyle ':completion:*:options' auto-description '%d'
-zstyle ':completion:*:descriptions' format $'\e[01;33m -- %d --\e[0m'
-zstyle ':completion:*:messages' format $'\e[01;35m -- %d --\e[0m'
-zstyle ':completion:*:warnings' format $'\e[01;31m -- No Matches Found --\e[0m'
-zstyle ':completion:*:corrections' format $'\e[01;32m -- %d (errors: %e) --\e[0m'
-
-# cd ~ 补全顺序
-zstyle ':completion:*:-tilde-:*' group-order 'named-directories' 'path-directories' 'users' 'expand'
-#}}}
-
-# 命令纠错
-setopt correctall
-
-# 命令提示符
-autoload -U colors && colors
-if [[ "$terminfo[colors]" -ge 8 ]]; then
-    colors
-fi
-for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE; do
-    eval MY_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
-    (( count = $count + 1 ))
-done
-MY_NO_COLOUR="%{$terminfo[sgr0]%}"
-
-PROMPT="%(?.$MY_YELLOW.$MY_RED)>-------------------------------------------------------------------------------
-$MY_CYAN>($MY_BLUE%n@%M$MY_WHITE:$MY_GREEN%l$MY_CYAN)-(${MY_RED}jobs$MY_WHITE:$MY_YELLOW%j$MY_CYAN)
-$MY_CYAN>($MY_YELLOW%~$MY_CYAN)
-%(?.$MY_CYAN.$MY_RED)>>%# $MY_NO_COLOR"
-
-RPROMPT="$MY_YELLOW(%D{%a, %b%d %H:%M})"
-
-# autocd
-#setopt autocd
-
-# 扩展文件名替换
-setopt extendedglob
-
-# 版本控制
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git svn
+################################################################################
+# Richard Ma's zsh configuration
+################################################################################
 
 # 命令别名
 alias ls='ls --color=always'
@@ -112,9 +41,9 @@ alias l='ls -CF'
 alias grep='grep --color=always'
 
 # 路径别名
-hash -d fhlnoip="/home/richardma/Projects/fhlnoip"
-hash -d config="/home/richardma/Personal/config"
-hash -d wiki="/home/richardma/Personal/wiki"
+#hash -d fhlnoip="/home/richardma/Projects/fhlnoip"
+#hash -d config="/home/richardma/Personal/config"
+#hash -d wiki="/home/richardma/Personal/wiki"
 
 # Exports
 export EDITOR=vim
