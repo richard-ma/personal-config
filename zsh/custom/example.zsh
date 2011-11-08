@@ -6,3 +6,4 @@
 fhlnoip=/home/richardma/Projects/fhlnoip
 config=/home/richardma/Personal/config
 wiki=/home/richardma/Personal/wiki
+down=/home/richardma/Downloads

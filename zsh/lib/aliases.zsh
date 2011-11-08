@@ -15,10 +15,12 @@ alias _='sudo'
 alias history='fc -l 1'
 
 # List direcory contents
-alias lsa='ls -lah'
-alias l='ls -la'
-alias ll='ls -l'
-alias sl=ls # often screw this up
+alias ls='ls --color=always'
+alias ll='ls -lh'
+alias la='ls -A'
+alias lal='ls -Alh'
+alias l='ls -CF'
+alias grep='grep --color=always'
 
 alias afind='ack-grep -il'
 

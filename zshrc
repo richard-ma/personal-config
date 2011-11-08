@@ -32,14 +32,6 @@ source $ZSH/oh-my-zsh.sh
 # Richard Ma's zsh configuration
 ################################################################################
 
-# 命令别名
-alias ls='ls --color=always'
-alias ll='ls -lh'
-alias la='ls -A'
-alias lal='ls -Alh'
-alias l='ls -CF'
-alias grep='grep --color=always'
-
 # 路径别名
 #hash -d fhlnoip="/home/richardma/Projects/fhlnoip"
 #hash -d config="/home/richardma/Personal/config"
