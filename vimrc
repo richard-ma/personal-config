@@ -474,7 +474,6 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 
-
 """"""""""""""""""""""""""""""
 " => Python section
 """"""""""""""""""""""""""""""
@@ -531,8 +530,8 @@ set mouse=a
 map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Load tags for standard C and UNIX
-"au FileType c set tags+=~/.vim/tags_stdc
-"au FileType c set tags+=/usr/include/tags
+au FileType c set tags+=~/.vim/tags_stdc
+au FileType c set tags+=/usr/include/tags
 
 "Key mapping for compiling and running C programs.
 au FileType c,cpp map <F6> :!gcc -Wall -lm % -o %<<CR>
