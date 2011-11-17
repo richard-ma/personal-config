@@ -538,6 +538,13 @@ au FileType c,cpp map <F6> :!gcc -Wall -lm % -o %<<CR>
 au FileType c,cpp map <F5> :!./%<<CR>
 
 "--------------------------------------------------------------
+" About .pas pascle
+"--------------------------------------------------------------
+"Key mapping for compiling and running C programs.
+au FileType pascal map <F6> :!fpc %<CR>
+au FileType pascal map <F5> :!./%<<CR>
+
+"--------------------------------------------------------------
 " About tex 
 "--------------------------------------------------------------
 "Key mapping for compiling and watching LaTeX scripts.
