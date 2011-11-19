@@ -21,6 +21,3 @@ alias la='ls -A'
 alias lal='ls -Alh'
 alias l='ls -CF'
 alias grep='grep --color=always'
-
-alias afind='ack-grep -il'
-

@@ -460,7 +460,7 @@ let OmniCpp_NamespaceSearch = 2
 let OmniCpp_MayCompleteDot = 1
 let OmniCpp_MayCompleteArrow = 1
 let OmniCpp_MayCompleteScope = 1
-let OmniCpp_SelectFirstItem = 2
+let OmniCpp_SelectFirstItem = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
@@ -527,7 +527,7 @@ set mouse=a
 " About .c and .cpp
 "--------------------------------------------------------------
 " Shortcut for generating ctags
-map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F8> :!ctags -RV -I __THROW --langmap=c:+.h --languages=c,c++ --c-kinds=+px --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Load tags for standard C and UNIX
 au FileType c set tags+=~/.vim/tags_stdc
