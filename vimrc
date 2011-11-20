@@ -1,4 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: amix the lucky stiff
 "             http://amix.dk - amix@amix.dk
 "
@@ -534,7 +534,7 @@ au FileType c set tags+=~/.vim/tags_stdc
 au FileType c set tags+=/usr/include/tags
 
 "Key mapping for compiling and running C programs.
-au FileType c,cpp map <F6> :!gcc -Wall -lm % -o %<<CR>
+au FileType c,cpp map <F6> :w<CR>:!gcc -Wall -lm % -o %<<CR>
 au FileType c,cpp map <F5> :!./%<<CR>
 
 "--------------------------------------------------------------
@@ -565,6 +565,35 @@ if has("gui_running")
     map <M-h> :bp<cr>
 endif
 
+let g:vimwiki_list = [{
+\ 'path': '~/Personal/wiki/src',
+\ 'path_html': '~/Personal/wiki/',
+\ 'auto_export': 1,
+\ 'diary_link_count': 5,
+\ 'html_header': '~/Personal/wiki/src/header.tpl',
+\ 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
+
+"vimwiki global options
+let g:vimwiki_camel_case = 0
+let g:vimwiki_html_header_numbering = 2
+let g:vimwiki_html_header_numbering_sym = '.'
+let g:vimwiki_folding = 1
+let g:vimwiki_fold_lists = 1
+
+"vimwiki mappings
+map <Leader>wf <Plug>VimwikiFollowLink
+map <Leader>we <Plug>VimwikiSplitLink
+map <Leader>wq <Plug>VimwikiVSplitLink
+map <Leader>wb <Plug>VimwikiGoBackLink
+map <Leader>wn <Plug>VimwikiNextLink
+map <Leader>wp <Plug>VimwikiPrevLink
+map <Leader>wd <Plug>VimwikiDeleteLink
+map <Leader>wr <Plug>VimwikiRenameLink
+map <Leader>wm <Plug>VimwikiToggleListItem
+
+"Calendar
+map <Leader>wc :Calendar<CR>
+
 "Search and replace the word under the cursor
 nnoremap <Leader>r :%s/\<<C-r><C-w>\>/<C-r><C-w>
 
@@ -588,32 +617,6 @@ nnoremap <silent> si     :FufBookmarkDir<CR>
 nnoremap <silent> sI     :FufBookmarkDirAdd<CR>
 nnoremap <silent> sq     :FufQuickfix<CR>
 
-"vimwiki
-let g:vimwiki_list = [{
-\ 'path': '~/Personal/wiki/src',
-\ 'path_html': '~/Personal/wiki/',
-\ 'auto_export': 1,
-\ 'diary_link_count': 5,
-\ 'html_header': '~/Personal/wiki/src/header.tpl',
-\ 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
-"vimwiki global options
-let g:vimwiki_camel_case = 0
-let g:vimwiki_html_header_numbering = 2
-let g:vimwiki_html_header_numbering_sym = '.'
-let g:vimwiki_folding = 1
-let g:vimwiki_fold_lists = 1
-"vimwiki mappings
-map <Leader>wf <Plug>VimwikiFollowLink
-map <Leader>we <Plug>VimwikiSplitLink
-map <Leader>wq <Plug>VimwikiVSplitLink
-map <Leader>wb <Plug>VimwikiGoBackLink
-map <Leader>wn <Plug>VimwikiNextLink
-map <Leader>wp <Plug>VimwikiPrevLink
-map <Leader>wd <Plug>VimwikiDeleteLink
-map <Leader>wr <Plug>VimwikiRenameLink
-map <Leader>wm <Plug>VimwikiToggleListItem
-"Calendar
-map <Leader>wc :Calendar<CR>
 
 "Zencoding
 let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
