@@ -638,7 +638,8 @@ let g:Tlist_Use_Right_Window = 1
 let g:Tlist_Exit_OnlyWindow = 1
 let g:Tlist_Show_One_File = 1
 let g:Tlist_GainFocus_On_ToggleOpen = 1
-let g:Tlist_Sort_type = "name"
+let g:Tlist_Sort_Type = "name"
+let g:Tlist_Javascript_settings = 'javascript;s:string;a:array;o:object;f:function;m:member'
 
 "SnipMate
 let g:snips_author = "Richard Ma (richard_ma)"
