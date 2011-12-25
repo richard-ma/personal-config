@@ -1,0 +1,10 @@
+--langdef=Javascript
+--langmap=Javascript:.js
+--regex-JavaScript=/(^|^[^\/*]+[[:blank:]])([A-Za-z0-9._$]+)[[:blank:]]*[:=][[:blank:]]*new[[:blank:]]+Object\(/\2/o,object/
+--regex-JavaScript=/(^|^[^\/*]+[[:blank:]])([A-Za-z0-9._$]+)[[:blank:]]*[:=][[:blank:]]*\{/\2/o,object/
+--regex-JavaScript=/(^|^[^\/*]+[[:blank:]])(^[^\?][[:blank:]]*)([A-Za-z0-9_]+)[[:blank:]]*[:][[:blank:]]*[A-Za-z0-9._$'"()]+/\3/m,member/
+--regex-JavaScript=/(^|^[^\/*]+[[:blank:]])([A-Za-z0-9._$]+)[[:blank:]]*[:=][[:blank:]]*new[[:blank:]]+Array\(/\2/a,array/
+--regex-JavaScript=/(^|^[^\/*]+[[:blank:]])([A-Za-z0-9._$]+)[[:blank:]]*[:=][[:blank:]]*\[/\2/a,array/
+--regex-JavaScript=/(^|^[^\/*]+[[:blank:]])([^! ]+[^= ]+)[[:blank:]]*=[[:blank:]]*[^""]'[^'']*/\2/s,string/
+--regex-JavaScript=/(^|^[^\/*]+[[:blank:]])([A-Za-z0-9._$()]+)[[:blank:]]*[:=][[:blank:]]*function[[:blank:]]*\(/\2/f,function/
+--regex-JavaScript=/(^|^[^\/*]+[[:blank:]])function[[:blank:]]+([A-Za-z0-9._$]+)[[:blank:]]*([^)])/\2/f,function/

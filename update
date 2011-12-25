@@ -42,6 +42,11 @@ source_file="$PWD/vim"
 target_file="$HOME/.vim"
 do_update $source_file $target_file
 
+# ctags settings
+source_file="$PWD/ctags"
+target_file="$HOME/.ctags"
+do_update $source_file $target_file
+
 # emacs settings
 source_file="$PWD/emacsrc"
 target_file="$HOME/.emacs"
@@ -71,12 +76,12 @@ source_file="$PWD/irssi"
 target_file="$HOME/.irssi"
 do_update $source_file $target_file
 
-file="$HOME/.local/share/applications/mimeapps.list"
-if [ -e $file ]; then
-    echo $DEBUG_STR" Delete old file(s): \"$file\""
-    rm $file
-fi
-source_file="$PWD/defaults.list"
-target_file="$HOME/.local/share/applications/defaults.list"
-do_update $source_file $target_file
+#file="$HOME/.local/share/applications/mimeapps.list"
+#if [ -e $file ]; then
+#    echo $DEBUG_STR" Delete old file(s): \"$file\""
+#    rm $file
+#fi
+#source_file="$PWD/defaults.list"
+#target_file="$HOME/.local/share/applications/defaults.list"
+#do_update $source_file $target_file
 
