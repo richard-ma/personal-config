@@ -552,6 +552,13 @@ au FileType tex map <F6> :!pdflatex %<CR>
 au FileType tex map <F5> :!evince %<.pdf >/dev/null 2>&1 &<CR>
 
 "--------------------------------------------------------------
+" About reStructText
+"--------------------------------------------------------------
+"Key mapping for compiling and watching LaTeX scripts.
+au FileType rst map <F6> :!make latex && cd ./_build/latex/ && xelatex *.tex<CR>
+au FileType rst map <F5> :!evince ./_build/latex/*.pdf >/dev/null 2>&1 &<CR>
+
+"--------------------------------------------------------------
 " About vimwiki 
 "--------------------------------------------------------------
 au FileType vimwiki setl wrap
