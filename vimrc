@@ -534,29 +534,30 @@ au FileType c set tags+=~/.vim/tags_stdc
 au FileType c set tags+=/usr/include/tags
 
 "Key mapping for compiling and running C programs.
-au FileType c,cpp map <F6> :w<CR>:!gcc -Wall -lm % -o %<<CR>
 au FileType c,cpp map <F5> :!./%<<CR>
+au FileType c,cpp map <F6> :w<CR>:!gcc -Wall -lm % -o %<<CR>
 
 "--------------------------------------------------------------
 " About .pas pascle
 "--------------------------------------------------------------
 "Key mapping for compiling and running C programs.
-au FileType pascal map <F6> :!fpc %<CR>
 au FileType pascal map <F5> :!./%<<CR>
+au FileType pascal map <F6> :!fpc %<CR>
 
 "--------------------------------------------------------------
 " About tex 
 "--------------------------------------------------------------
 "Key mapping for compiling and watching LaTeX scripts.
-au FileType tex map <F6> :!pdflatex %<CR>
 au FileType tex map <F5> :!evince %<.pdf >/dev/null 2>&1 &<CR>
+au FileType tex map <F6> :!pdflatex %<CR>
 
 "--------------------------------------------------------------
 " About reStructText
 "--------------------------------------------------------------
 "Key mapping for compiling and watching LaTeX scripts.
-au FileType rst map <F6> :!make latex && cd ./_build/latex/ && xelatex *.tex<CR>
 au FileType rst map <F5> :!evince ./_build/latex/*.pdf >/dev/null 2>&1 &<CR>
+au FileType rst map <F6> :!make latex && cd ./_build/latex/ && xelatex *.tex<CR>
+au FileType rst map <F7> :!rst2odt.py % > %<.odt<CR>
 
 "--------------------------------------------------------------
 " About vimwiki 
