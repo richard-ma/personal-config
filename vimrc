@@ -554,6 +554,8 @@ au FileType tex map <F6> :!pdflatex %<CR>
 "--------------------------------------------------------------
 " About reStructText
 "--------------------------------------------------------------
+au FileType rst setl wrap
+
 "Key mapping for compiling and watching LaTeX scripts.
 au FileType rst map <F5> :!evince ./_build/latex/*.pdf >/dev/null 2>&1 &<CR>
 au FileType rst map <F6> :!make latex && cd ./_build/latex/ && xelatex *.tex<CR>
