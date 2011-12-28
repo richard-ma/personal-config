@@ -26,7 +26,7 @@ fi
 
 for ((i=0; i<$count; i++))
 do
-    $datagen > $name/linux/$name$i.in
+    $datagen $i > $name/linux/$name$i.in
     cp $name/linux/$name$i.in $name/windows/$name$i.in
 
     $correct < $name/linux/$name$i.in > $name/linux/$name$i.out
