@@ -535,7 +535,7 @@ au FileType c set tags+=/usr/include/tags
 
 "Key mapping for compiling and running C programs.
 au FileType c,cpp map <F5> :!./%<<CR>
-au FileType c,cpp map <F6> :w<CR>:!gcc -Wall -lm % -o %<<CR>
+au FileType c,cpp map <F6> :w<CR>:!gcc -std=c99 -Wall -lm % -o %<<CR>
 
 "--------------------------------------------------------------
 " About .pas pascle
