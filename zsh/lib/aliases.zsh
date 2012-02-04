@@ -21,7 +21,3 @@ alias la='ls -A'
 alias lal='ls -Alh'
 alias l='ls -CF'
 alias grep='grep --color=always'
-
-alias agu='sudo apt-get update'
-alias agd='sudo apt-get dist-upgrade'
-alias acs='sudo apt-cache search'
