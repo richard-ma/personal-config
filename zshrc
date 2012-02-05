@@ -44,6 +44,10 @@ if [ -f ~/bin ]; then
     export PATH=$PATH:~/bin/
 fi
 
+# Ruby rvm
+# This loads RVM into a shell session.
+[[ -s "/home/richardma/.rvm/scripts/rvm" ]] && source "/home/richardma/.rvm/scripts/rvm"
+
 # dh_make
 export DEBEMAIL="richard.ma.19850509@gmail.com"
 export DEBFULLNAME="Richard Ma"
