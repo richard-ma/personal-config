@@ -19,6 +19,11 @@
     fu = fetch -v origin master:update
     mu = merge -v update
     du = branch -d update
+    pod = push -v origin dev
+    pod = push -v origin dev --tags
+    fu = fetch -v origin dev:update-dev
+    mu = merge -v update-dev
+    du = branch -d update-dev
 [diff]
 	renamelimit = 0
 [merge]
