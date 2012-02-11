@@ -15,6 +15,7 @@
 	wc = whatchanged
     br = branch
     pom = push -v origin master
+    pom = push -v origin master --tags
     fu = fetch -v origin master:update
     mu = merge -v update
     du = branch -d update
