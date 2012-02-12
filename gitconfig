@@ -15,12 +15,12 @@
 	wc = whatchanged
     br = branch
     pom = push -v origin master
-    pom = push -v origin master --tags
+    pomt = push -v origin master --tags
     fu = fetch -v origin master:update
     mu = merge -v update
     du = branch -d update
     pod = push -v origin dev
-    pod = push -v origin dev --tags
+    podt = push -v origin dev --tags
     fdu = fetch -v origin dev:update-dev
     mdu = merge -v update-dev
     ddu = branch -d update-dev
