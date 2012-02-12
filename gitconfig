@@ -21,9 +21,9 @@
     du = branch -d update
     pod = push -v origin dev
     pod = push -v origin dev --tags
-    fu = fetch -v origin dev:update-dev
-    mu = merge -v update-dev
-    du = branch -d update-dev
+    fdu = fetch -v origin dev:update-dev
+    mdu = merge -v update-dev
+    ddu = branch -d update-dev
 [diff]
 	renamelimit = 0
 [merge]
