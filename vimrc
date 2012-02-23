@@ -579,7 +579,7 @@ let g:vimwiki_list = [{
 \ 'path': '~/Personal/wiki/src',
 \ 'path_html': '~/Personal/wiki/',
 \ 'auto_export': 1,
-\ 'diary_link_count': 5,
+\ 'diary_link_count': 1,
 \ 'html_header': '~/Personal/wiki/src/header.tpl',
 \ 'html_footer': '~/Personal/wiki/src/footer.tpl'}]
 
