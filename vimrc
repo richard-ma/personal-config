@@ -99,6 +99,9 @@ let g:mapleader = ","
 
 " Fast saving
 nmap <Leader>w :w<CR>
+nmap <Leader>wa :wa<CR>
+nmap <Leader>q :q<CR>
+nmap <Leader>qa :qa<CR>
 
 " Fast editing of the .vimrc
 map <Leader>e :e! ~/.vimrc<CR>
@@ -209,7 +212,6 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 " When you press gv you vimgrep after the selected text
 vnoremap <silent> gv :call VisualSearch('gv')<CR>
 map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
-
 
 function! CmdLine(str)
 exe "menu Foo.Bar :" . a:str
@@ -421,12 +423,11 @@ map <leader>cc :botright cope<cr>
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
 
-
 """"""""""""""""""""""""""""""
 " => Minibuffer plugin
 """"""""""""""""""""""""""""""
 let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne = 4
+let g:miniBufExplorerMoreThanOne = 10
 let g:miniBufExplModSelTarget = 0
 let g:miniBufExplUseSingleClick = 1
 let g:miniBufExplMapWindowNavVim = 1
@@ -608,9 +609,19 @@ map <Leader>wc :Calendar<CR>
 nnoremap <Leader>r :%s/\<<C-r><C-w>\>/<C-r><C-w>
 
 "My Custom keys 
-noremap <C-i> <C-]>
+"<C-i><C-o>
+noremap <C-i> <C-]> 
 noremap <C-c> "+
 noremap <C-a> ggVG
+"Make Y like others
+map Y y$
+"Reselect visual block after indent/outdent
+vnoremap > >gv
+vnoremap < <gv
+"Clear search highlights
+noremap <silent> <Leader>/ :nohls<CR>
+"Remap ESC on insert mode
+inoremap jj <ESC>
 
 " Fuzzyfinder Key bindings
 let g:fuf_modesDisable = []
