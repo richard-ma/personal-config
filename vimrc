@@ -622,6 +622,9 @@ vnoremap < <gv
 noremap <silent> <Leader>/ :nohls<CR>
 "Remap ESC on insert mode
 inoremap jj <ESC>
+"next line and prev line on wrap status
+nnoremap j gj
+nnoremap k gk
 
 " Fuzzyfinder Key bindings
 let g:fuf_modesDisable = []
