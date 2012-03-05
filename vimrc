@@ -685,3 +685,10 @@ let g:neocomplcache_dictionary_filetype_lists = {
 
 "surround
 xmap <Leader>s <Plug>Vsurround
+
+"fugitive
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>gr :Gread<CR>
+nnoremap <Leader>gd :Gdiff<CR>
