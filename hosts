@@ -1,9 +1,12 @@
 127.0.0.1	localhost
 127.0.1.1	richardma-desktop
 
-# tjlug blog testing
+# tjlug domain
 #106.187.34.85 tjlug.net
 #106.187.34.85 www.tjlug.net
+
+# vimbits
+50.16.215.20 vimbits.com
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
@@ -119,26 +122,26 @@ ff02::3 ip6-allhosts
 2001:778:0:ffff:64:0:cdfb:dbde widgets.twimg.com
 
 ##Google.com Google.com
-#2404:6800:8005::68 google.com #主页
-#2404:6800:8005::68 www.l.google.com
-#2404:6800:8005::c1 m.google.com #Google移动版
-#2404:6800:8005::c1 m.google.com.hk
-#2404:6800:8005::54 accounts.google.com #帐户
-#2404:6800:8005::62 ns1.google.com #域名系统服务器ns-soa/ns
-#2404:6800:8005::62 ns2.google.com #域名系统服务器ns
-#2404:6800:8005::62 ns3.google.com #域名系统服务器ns
-#2404:6800:8005::62 ns4.google.com #域名系统服务器ns
-#2404:6800:8005::65 services.google.com #服务申请
-#2404:6800:8005::8b goto.google.com #跳转
-#2404:6800:8005::d2 jmt0.google.com
-#2404:6800:8005::d2 wire.l.google.com
-#2404:6800:8005::63 ipv6.google.com
-#2404:6800:8005::67 ipv6.google.com
-#2404:6800:8005::68 ipv6.google.com
-#2404:6800:8005::69 ipv6.google.com
-#2404:6800:8005::6a ipv6.google.com
-#2404:6800:8005::93 ipv6.google.com
-#2404:6800:8003::6a ipv6.l.google.com
+2404:6800:8005::68 google.com #主页
+2404:6800:8005::68 www.l.google.com
+2404:6800:8005::c1 m.google.com #Google移动版
+2404:6800:8005::c1 m.google.com.hk
+2404:6800:8005::54 accounts.google.com #帐户
+2404:6800:8005::62 ns1.google.com #域名系统服务器ns-soa/ns
+2404:6800:8005::62 ns2.google.com #域名系统服务器ns
+2404:6800:8005::62 ns3.google.com #域名系统服务器ns
+2404:6800:8005::62 ns4.google.com #域名系统服务器ns
+2404:6800:8005::65 services.google.com #服务申请
+2404:6800:8005::8b goto.google.com #跳转
+2404:6800:8005::d2 jmt0.google.com
+2404:6800:8005::d2 wire.l.google.com
+2404:6800:8005::63 ipv6.google.com
+2404:6800:8005::67 ipv6.google.com
+2404:6800:8005::68 ipv6.google.com
+2404:6800:8005::69 ipv6.google.com
+2404:6800:8005::6a ipv6.google.com
+2404:6800:8005::93 ipv6.google.com
+2404:6800:8003::6a ipv6.l.google.com
 
 ##Google.com.hk 谷歌香港
 #2404:6800:8005::2e www.google.com.hk
@@ -269,7 +272,7 @@ ff02::3 ip6-allhosts
 #2404:6800:8005::8d productideas.appspot.com #Google 汇问
 #2404:6800:8005::8d storegadgetwizard.appspot.com #Google Checkout Store Gadget
 #2404:6800:8005::8d moderator.appspot.com #Google Moderator
-2404:6800:8005::8d gv-gadget.appspot.com #YouTube Gadget
+#2404:6800:8005::8d gv-gadget.appspot.com #YouTube Gadget
 #2404:6800:8005::8d haiticrisis.appspot.com #Google Person Finder: Haiti Earthquake
 #2404:6800:8005::8d i18napis.appspot.com
 #2404:6800:8005::8d *.appspot.com #可以添加自己的 gae 应用
@@ -355,7 +358,7 @@ ff02::3 ip6-allhosts
 #2404:6800:8005::84 gmailblog.blogspot.com
 #2404:6800:8005::84 igoogledeveloper.blogspot.com #iGoogle Developer Blog
 #2404:6800:8005::84 webmproject.blogspot.com
-2404:6800:8005::84 youtube-global.blogspot.com #YouTube Blog
+#2404:6800:8005::84 youtube-global.blogspot.com #YouTube Blog
 #2404:6800:8005::84 *.blogspot.com #可以添加你自己的博客地址到这里
 #2404:6800:8005::84 blogspot.l.google.com
 

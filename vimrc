@@ -354,7 +354,7 @@ endtry
 set laststatus=2
 
 " Format the statusline
-set statusline=\ %{fugitive#statusline()}%{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
+set statusline=\ %{fugitive#statusline()}\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 
 
 function! CurDir()
@@ -622,6 +622,9 @@ vnoremap < <gv
 noremap <silent> <Leader>/ :nohls<CR>
 "Remap ESC on insert mode
 inoremap jj <ESC>
+"next line and prev line on wrap status
+nnoremap j gj
+nnoremap k gk
 
 " Fuzzyfinder Key bindings
 let g:fuf_modesDisable = []
@@ -682,3 +685,10 @@ let g:neocomplcache_dictionary_filetype_lists = {
 
 "surround
 xmap <Leader>s <Plug>Vsurround
+
+"fugitive
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>gr :Gread<CR>
+nnoremap <Leader>gd :Gdiff<CR>
