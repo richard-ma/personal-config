@@ -97,12 +97,6 @@ set autoread
 let mapleader = ","
 let g:mapleader = ","
 
-" Fast saving
-nmap <Leader>w :w<CR>
-nmap <Leader>wa :wa<CR>
-nmap <Leader>q :q<CR>
-nmap <Leader>qa :qa<CR>
-
 " Fast editing of the .vimrc
 map <Leader>e :e! ~/.vimrc<CR>
 " When vimrc is edited, reload it
@@ -252,14 +246,6 @@ cno $c e <C-\>eCurrentFileDir("e")<cr>
 
 " $q is super useful when browsing on the command line
 cno $q <C-\>eDeleteTillSlash()<cr>
-
-" Bash like keys for the command line
-cnoremap <C-A>		<Home>
-cnoremap <C-E>		<End>
-cnoremap <C-K>		<C-U>
-
-cnoremap <C-P> <Up>
-cnoremap <C-N> <Down>
 
 func! Cwd()
 let cwd = getcwd()
@@ -611,8 +597,6 @@ nnoremap <Leader>r :%s/\<<C-r><C-w>\>/<C-r><C-w>
 "My Custom keys 
 "<C-i><C-o>
 noremap <C-i> <C-]> 
-noremap <C-c> "+
-noremap <C-a> ggVG
 "Make Y like others
 map Y y$
 "Reselect visual block after indent/outdent
