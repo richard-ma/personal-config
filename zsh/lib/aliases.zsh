@@ -21,3 +21,15 @@ alias la='ls -A'
 alias lal='ls -Alh'
 alias l='ls -CF'
 alias grep='grep --color=always'
+
+# rm redefine
+function remove {
+    if [ `pwd` != "$HOME/.local/share/Trash/files" ]; then
+        mv "$@" ~/.local/share/Trash/files
+    else
+        alias rm='rm'
+        rm "$@"
+        alias rm='remove'
+    fi
+}
+alias rm='remove'
