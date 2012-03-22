@@ -100,7 +100,7 @@ let g:mapleader = ","
 " Fast editing of the .vimrc
 map <Leader>e :e! ~/.vimrc<CR>
 " When vimrc is edited, reload it
-autocmd! bufwritepost ~/.vimrc source ~/.vimrc
+autocmd! bufwritepost ~/.vimrc source $HOME/.vimrc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -522,7 +522,8 @@ au FileType c set tags+=/usr/include/tags
 
 "Key mapping for compiling and running C programs.
 au FileType c,cpp map <F5> :!./%<<CR>
-au FileType c,cpp map <F6> :w<CR>:!gcc -std=c99 -Wall -lm % -o %<<CR>
+au FileType c,cpp map <F6> :w<CR>:!gcc -std=c99 -Wall -lm -O0 -g % -o %<<CR>
+au FileType c,cpp map <F7> :!gdb ./%<<CR>
 
 "--------------------------------------------------------------
 " About .pas pascle
