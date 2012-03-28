@@ -195,6 +195,9 @@ set ai "Auto indent
 set si "Smart indet
 set nowrap "Do not wrap lines
 
+set splitright
+set splitbelow
+
 """"""""""""""""""""""""""""""
 " => Visual mode related
 """"""""""""""""""""""""""""""
