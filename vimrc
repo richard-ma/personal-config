@@ -343,22 +343,7 @@ endtry
 set laststatus=2
 
 " Format the statusline
-set statusline=\ %{fugitive#statusline()}\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
-
-
-function! CurDir()
-let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
-return curdir
-endfunction
-
-function! HasPaste()
-if &paste
-    return 'PASTE MODE  '
-else
-    return ''
-endif
-endfunction
-
+set statusline=%F%m%r%h%w[%l:%c]%y%{fugitive#statusline()}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket expanding
