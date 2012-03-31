@@ -160,7 +160,7 @@ endif
 
 set t_Co=256
 set background=dark
-colorscheme peaksea
+colorscheme lucius
 
 set encoding=utf8
 try
@@ -343,7 +343,7 @@ endtry
 set laststatus=2
 
 " Format the statusline
-set statusline=%F%m%r%h%w[%l:%c]%y%{fugitive#statusline()}
+set statusline=%t%m%r%h%w[%l:%c]%y%{fugitive#statusline()}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket expanding
