@@ -614,11 +614,6 @@ nnoremap <silent> si     :FufBookmarkDir<CR>
 nnoremap <silent> sI     :FufBookmarkDirAdd<CR>
 nnoremap <silent> sq     :FufQuickfix<CR>
 
-
-"Zencoding
-let g:user_zen_settings = {'xml' : {'extends': 'html',}, 'jsp' : {'extends': 'html',}, 'php' : {'extends': 'html', 'filters': 'c', }, }
-let g:use_zen_complete_tag = 1
-
 "NERD tree
 map <Leader>tt :NERDTreeToggle<CR>
 let g:NERDChristmasTree = 1
