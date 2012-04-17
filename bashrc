@@ -45,10 +45,10 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1=$PS1'\W\n'
+    PS1='\w\n'
     PS1=$PS1'\j>>\$ '
 else
-    PS1=$PS1'\W\n'
+    PS1='\w\n'
     PS1=$PS1'\j>>\$ '
 fi
 unset color_prompt force_color_prompt
