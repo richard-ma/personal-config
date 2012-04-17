@@ -45,15 +45,11 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\u@\H - \D{%F, %a %T}\n'
-    PS1=$PS1'Running Jobs: \j - Device: \l - Bash Version: \v\n'
     PS1=$PS1'\W\n'
-    PS1=$PS1'>>\$ '
+    PS1=$PS1'\j>>\$ '
 else
-    PS1='\u@\H - \D{%F, %a %T}\n'
-    PS1=$PS1'Running Jobs: \j - Device: \l - Bash Version: \v\n'
     PS1=$PS1'\W\n'
-    PS1=$PS1'>>\$ '
+    PS1=$PS1'\j>>\$ '
 fi
 unset color_prompt force_color_prompt
 
