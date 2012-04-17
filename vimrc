@@ -516,14 +516,26 @@ au FileType c,cpp map <F7> :!gdb ./%<<CR>
 "--------------------------------------------------------------
 " About .pas pascle
 "--------------------------------------------------------------
-"Key mapping for compiling and running C programs.
 au FileType pascal map <F5> :!./%<<CR>
 au FileType pascal map <F6> :!fpc %<CR>
 
 "--------------------------------------------------------------
+" About .rb ruby
+"--------------------------------------------------------------
+au FileType ruby map <F5> :!./%<CR>
+au FileType ruby map <F6> :!ruby %<CR>
+au FileType ruby map <F7> :!chmod a+x %<CR>
+
+"--------------------------------------------------------------
+" About .py python
+"--------------------------------------------------------------
+au FileType python map <F5> :!./%<CR>
+au FileType python map <F6> :!python %<CR>
+au FileType python map <F7> :!chmod a+x %<CR>
+
+"--------------------------------------------------------------
 " About tex 
 "--------------------------------------------------------------
-"Key mapping for compiling and watching LaTeX scripts.
 au FileType tex map <F5> :!evince %<.pdf >/dev/null 2>&1 &<CR>
 au FileType tex map <F6> :!pdflatex %<CR>
 

@@ -110,6 +110,7 @@ export EDITOR=vim
 
 export PATH=$PATH:~/opt/android-sdk-linux_86/tools
 export PATH=$PATH:~/Projects/everywriter/bin
+export PATH=$PATH:~/.gem/ruby/1.9.1/bin
 
 if [ -f ~/bin ]; then
     export PATH=$PATH:~/bin/
