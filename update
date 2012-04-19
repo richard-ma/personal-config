@@ -76,6 +76,11 @@ source_file="$PWD/irssi"
 target_file="$HOME/.irssi"
 do_update $source_file $target_file
 
+# tmux settings
+source_file="$PWD/tmux.conf"
+target_file="$HOME/.tmux.conf"
+do_update $source_file $target_file
+
 #file="$HOME/.local/share/applications/mimeapps.list"
 #if [ -e $file ]; then
 #    echo $DEBUG_STR" Delete old file(s): \"$file\""

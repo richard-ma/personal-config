@@ -123,3 +123,12 @@ export DEBFULLNAME="Richard Ma"
 # user env vars
 export USER_CONFIG_DIR=~/Personal/config
 export USER_WIKI_DIR=~/Personal/wiki
+
+# tmux
+if which tmux 2>&1 >/dev/null; then
+    if tmux has-session 2>&1 >/dev/null; then
+        tmux attach && exit
+    else
+        tmux new && exit
+    fi
+fi
