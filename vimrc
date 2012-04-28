@@ -520,6 +520,13 @@ au FileType pascal map <F5> :!./%<<CR>
 au FileType pascal map <F6> :!fpc %<CR>
 
 "--------------------------------------------------------------
+" About .lisp common lisp (clisp)
+"--------------------------------------------------------------
+au FileType lisp map <F5> :!./%<CR>
+au FileType lisp map <F6> :!clisp %<CR>
+au FileType lisp map <F7> :!chmod a+x %<CR>
+
+"--------------------------------------------------------------
 " About .rb ruby
 "--------------------------------------------------------------
 au FileType ruby map <F5> :!./%<CR>
