@@ -160,7 +160,7 @@ endif
 
 set t_Co=256
 set background=dark
-colorscheme peaksea
+colorscheme solarized
 
 set encoding=utf8
 try
