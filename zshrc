@@ -51,3 +51,6 @@ export DEBFULLNAME="Richard Ma"
 # user env vars
 export USER_CONFIG_DIR=~/Personal/config
 export USER_WIKI_DIR=~/Personal/wiki
+
+# tmux
+export TERM=xterm-256color
