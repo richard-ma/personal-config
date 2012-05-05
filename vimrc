@@ -344,7 +344,7 @@ endtry
 set laststatus=2
 
 " Format the statusline
-set statusline=%t%m%r%h%w[%l:%c]%y%{fugitive#statusline()}
+set statusline=%t%m%r%h%w[%L:%l-%c]%y%{fugitive#statusline()}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket expanding
