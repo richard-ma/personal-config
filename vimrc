@@ -160,8 +160,8 @@ endif
 
 set t_Co=256
 let g:solarized_termcolors=256
-set background=dark
 colorscheme solarized
+set background=dark
 
 set encoding=utf8
 try
