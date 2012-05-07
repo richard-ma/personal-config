@@ -134,6 +134,8 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
+" Cursor
+set cursorline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
