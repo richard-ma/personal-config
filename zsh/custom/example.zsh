@@ -7,6 +7,7 @@
 # Project
 ##################################################
 fhlnoip=/home/richardma/Projects/fhlnoip
+playground=/home/richardma/Projects/playground
 writekey=/home/richardma/Projects/writekey
 
 ##################################################

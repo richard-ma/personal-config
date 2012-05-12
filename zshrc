@@ -32,11 +32,6 @@ source $ZSH/oh-my-zsh.sh
 # Richard Ma's zsh configuration
 ################################################################################
 
-# 路径别名
-#hash -d fhlnoip="/home/richardma/Projects/fhlnoip"
-#hash -d config="/home/richardma/Personal/config"
-#hash -d wiki="/home/richardma/Personal/wiki"
-
 # Exports
 export EDITOR=vim
 

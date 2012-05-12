@@ -12,6 +12,7 @@ alias hpodder='nocorrect hpodder'
 # Richard Ma's configuration
 alias fpc='nocorrect fpc'
 alias fhlnoip='nocorrect fhlnoip'
+alias playground='nocorrect playground'
 alias writekey='nocorrect writekey'
 alias config='nocorrect config'
 alias wiki='nocorrect wiki'
