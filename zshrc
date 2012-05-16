@@ -49,3 +49,5 @@ export USER_WIKI_DIR=~/Personal/wiki
 
 # tmux
 export TERM=xterm-256color
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
