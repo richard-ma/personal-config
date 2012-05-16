@@ -126,3 +126,6 @@ export USER_WIKI_DIR=~/Personal/wiki
 
 # tmux
 export TERM=xterm-256color
+
+#heroku
+export PATH=$PATH:/home/richardma/opt
