@@ -638,6 +638,7 @@ nnoremap <silent> sq     :FufQuickfix<CR>
 
 "NERD tree
 map <Leader>tt :NERDTreeToggle<CR>
+let g:NERDTreeWinSize = 20
 let g:NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
 

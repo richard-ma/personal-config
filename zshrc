@@ -51,4 +51,4 @@ export USER_WIKI_DIR=~/Personal/wiki
 export TERM=xterm-256color
 
 #heroku
-export PATH=$PATH:/home/richardma/opt
+export PATH=$PATH:/home/richardma/opt/heroku-client/
