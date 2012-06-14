@@ -142,7 +142,7 @@ set cursorline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable "Enable syntax hl
 
-set shell=/bin/bash
+set shell=/bin/zsh
 
 " Show line number
 set nu
