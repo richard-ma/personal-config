@@ -129,3 +129,5 @@ export TERM=xterm-256color
 
 #heroku
 export PATH=$PATH:/home/richardma/opt/heroku-client/
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
