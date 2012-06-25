@@ -54,3 +54,4 @@ export TERM=xterm-256color
 export PATH=$PATH:/home/richardma/opt/heroku-client/
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.2-p320/bin # add Gem to PATH
