@@ -5,9 +5,6 @@
 #106.187.34.85 tjlug.net
 #106.187.34.85 www.tjlug.net
 
-# vimbits
-50.16.215.20 vimbits.com
-
 # The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
 fe00::0 ip6-localnet
@@ -15,6 +12,9 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ff02::3 ip6-allhosts
+
+# vimbits
+50.16.215.20 vimbits.com
 
 # twitter
 2001:778:0:ffff:64:0:c73b:95e6 twitter.com
