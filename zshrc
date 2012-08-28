@@ -49,6 +49,8 @@ export USER_WIKI_DIR=~/Personal/wiki
 
 # tmux
 export TERM=xterm-256color
+# tmuxifier
+[[ -s "$HOME/.tmuxifier/init.sh" ]] && source "$HOME/.tmuxifier/init.sh"
 
 #heroku
 export PATH=$PATH:/home/richardma/opt/heroku-client/
