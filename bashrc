@@ -127,6 +127,7 @@ export USER_WIKI_DIR=~/Personal/wiki
 # tmux
 export TERM=xterm-256color
 # tmuxifier
+export TMUXIFIER_LAYOUT_PATH="$HOME/.tmuxifier-layouts"
 [[ -s "$HOME/.tmuxifier/init.sh" ]] && source "$HOME/.tmuxifier/init.sh"
 
 #heroku
