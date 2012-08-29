@@ -6,11 +6,6 @@ alias po='popd'
 alias ...='cd ../..'
 alias -- -='cd -'
 
-# Super user
-alias _='sudo'
-
-#alias g='grep -in'
-
 # Show history
 alias history='fc -l 1'
 
@@ -21,3 +16,6 @@ alias la='ls -A'
 alias lal='ls -Alh'
 alias l='ls -CF'
 alias grep='grep --color=always'
+
+# tmuxifier
+alias win='tmuxifier w'
