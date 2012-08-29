@@ -1,3 +1,6 @@
+# Load tmux
+[[ "$TMUX" == "" ]] && exec tmux
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/Personal/config/zsh
 

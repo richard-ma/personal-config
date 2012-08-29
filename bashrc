@@ -135,3 +135,8 @@ export PATH=$PATH:/home/richardma/opt/heroku-client/
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.2-p320/bin # add Gem to PATH
+
+# ONLY FOR BASH!!!
+# If not running interactively, do not do anything
+[[ $- != *i* ]] && return
+[[ $TERM != screen* ]] && exec tmux
