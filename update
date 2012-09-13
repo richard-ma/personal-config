@@ -47,15 +47,6 @@ source_file="$PWD/ctags"
 target_file="$HOME/.ctags"
 do_update $source_file $target_file
 
-# emacs settings
-source_file="$PWD/emacsrc"
-target_file="$HOME/.emacs"
-do_update $source_file $target_file
-
-source_file="$PWD/emacs"
-target_file="$HOME/.emacsd"
-do_update $source_file $target_file
-
 # git settings
 source_file="$PWD/gitconfig"
 target_file="$HOME/.gitconfig"
