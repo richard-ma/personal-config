@@ -19,3 +19,6 @@ alias grep='grep --color=always'
 
 # tmuxifier
 alias win='tmuxifier w'
+
+# Emacs --no-window-system
+alias emacs='emacs -nw'
