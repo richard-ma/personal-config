@@ -1,0 +1,24 @@
+;; highlight current line
+(global-hl-line-mode 1)
+
+;; set indent size
+(setq standard-indent 4)
+
+;; turn off tab character
+(setq-default indent-tags-mode nil)
+
+;; prevent backup file creation
+(setq make-backup-files nil)
+
+;; enable line and column numbering
+(line-number-mode 1)
+(column-number-mode 1)
+
+;; set fill column
+(setq-default fill-column 72)
+
+;; enable auto fill mode
+(setq auto-fill-mode 1)
+
+;; treat new buffers as text
+(setq default-major-mode 'text-mode)
