@@ -1,3 +1,9 @@
+;; change yes-or-no to y-or-n
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;; shutdown startup slide
+(setq inhibit-startup-message t)
+
 ;; highlight current line
 (global-hl-line-mode 1)
 
@@ -13,6 +19,7 @@
 ;; enable line and column numbering
 (line-number-mode 1)
 (column-number-mode 1)
+(global-linum-mode 'linum-mode)
 
 ;; set fill column
 (setq-default fill-column 72)

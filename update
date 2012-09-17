@@ -42,13 +42,13 @@ source_file="$PWD/vim"
 target_file="$HOME/.vim"
 do_update $source_file $target_file
 
+# emacs settings
 source_file="$PWD/emacsrc"
 target_file="$HOME/.emacs"
 do_update $source_file $target_file
 
-# ctags settings
-source_file="$PWD/ctags"
-target_file="$HOME/.ctags"
+source_file="$PWD/emacs"
+target_file="$HOME/.emacs.d"
 do_update $source_file $target_file
 
 # git settings
