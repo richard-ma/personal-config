@@ -1,3 +1,7 @@
+;; color-theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'solarized-dark t)
+
 ;; change yes-or-no to y-or-n
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -13,8 +17,9 @@
 ;; turn off tab character
 (setq-default indent-tags-mode nil)
 
-;; prevent backup file creation
+;; prevent backup and auto-save file creation
 (setq make-backup-files nil)
+(setq auto-save-default nil)
 
 ;; enable line and column numbering
 (line-number-mode 1)
@@ -27,5 +32,7 @@
 ;; enable auto fill mode
 (setq auto-fill-mode 1)
 
-;; treat new buffers as text
-(setq default-major-mode 'text-mode)
+;; for GUI settings
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
