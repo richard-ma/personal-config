@@ -12,7 +12,7 @@
 (global-hl-line-mode 1)
 
 ;; 将TAB间距设置成4
-(setq standard-indent 4)
+(setq standard-indent 2)
 
 ;; 使用空格代替TAB
 (setq-default indent-tags-mode nil)
@@ -34,3 +34,15 @@
 ;; 打开 ido-mode 可以在补全时看到可以选择的选项并直接选择
 (require 'ido) 
 (ido-mode t)
+
+;; org-mode
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+
+;; slime mode
+(add-to-list 'load-path "~/.emacs.d/plugins/slime/")
+(setq inferior-lisp-program "/usr/bin/sbcl") 
+(require 'slime)  
+(slime-setup)
