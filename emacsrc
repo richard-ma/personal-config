@@ -1,42 +1,36 @@
-;; color-theme
+;; 配色主题
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'solarized-dark t)
 
-;; change yes-or-no to y-or-n
+;; 将 yes-or-no 的选择用 y-or-n 代替，每次只要用y或n就可以了
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; shutdown startup slide
+;; 关闭Emacs起始画面
 (setq inhibit-startup-message t)
 
-;; highlight current line
+;; 高亮显示光标所在的行
 (global-hl-line-mode 1)
 
-;; set indent size
+;; 将TAB间距设置成4
 (setq standard-indent 4)
 
-;; turn off tab character
+;; 使用空格代替TAB
 (setq-default indent-tags-mode nil)
 
-;; prevent backup and auto-save file creation
+;; 关闭备份和自动保存功能
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
-;; enable line and column numbering
+;; 显示行号和列号，并在左侧显示行号
 (line-number-mode 1)
 (column-number-mode 1)
 (global-linum-mode 'linum-mode)
 
-;; set fill column
-(setq-default fill-column 72)
+;; GUI设置
+(scroll-bar-mode -1) ;; 关闭滚动条
+(tool-bar-mode -1) ;; 关闭工具栏
+(menu-bar-mode -1) ;; 关闭菜单栏
 
-;; enable auto fill mode
-(setq auto-fill-mode 1)
-
-;; for GUI settings
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-
-;; ido-mode
-(require 'ido)
+;; 打开 ido-mode 可以在补全时看到可以选择的选项并直接选择
+(require 'ido) 
 (ido-mode t)
