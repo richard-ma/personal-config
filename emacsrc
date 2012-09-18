@@ -42,8 +42,13 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-font-lock-mode 1)
 
-;; slime mode
+;; slime-mode
 (add-to-list 'load-path "~/.emacs.d/plugins/slime/")
 (setq inferior-lisp-program "/usr/bin/sbcl") 
 (require 'slime)  
 (slime-setup '(slime-fancy))
+
+;; ibus-mode
+(add-to-list 'load-path "~/.emacs.d/plugins/ibus-el/")
+(require 'ibus)
+(add-hook 'after-init-hook 'ibus-mode-on)
