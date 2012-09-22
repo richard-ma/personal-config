@@ -1,3 +1,8 @@
+;; 添加emacs包软件库
+(require 'package)
+(add-to-list 'package-archives '("marmalade"."http://marmalade-repo.org/packages/"))
+(package-initialize)
+
 ;; 配色主题
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'solarized-dark t)
