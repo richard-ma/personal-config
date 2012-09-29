@@ -1,16 +1,16 @@
 
 ;; ----- smex-history -----
 (
+ goto-line
  cd
  5x5
  arp
  dbx
  dig
  erc
- ert
 )
 
 ;; ----- smex-data -----
 (
- 
+ (goto-line . 2)
 )
