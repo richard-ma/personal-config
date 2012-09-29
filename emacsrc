@@ -7,6 +7,10 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'solarized-dark t)
 
+;; 其它部分的配置文件
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'keybinding)
+
 ;; 配置字体
 (set-default-font "FreeMono-14")
 
