@@ -64,3 +64,22 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/ibus-el/")
 (require 'ibus)
 (add-hook 'after-init-hook 'ibus-mode-on)
+
+;; paredit-mode
+(autoload 'paredit-mode "paredit"
+  "Minor mode for pseudo-structurally editing Lisp code." t)
+(add-hook 'emacs-lisp-mode-hook (lambda () (paredit-mode t)))
+(add-hook 'lisp-mode-hook (lambda () (paredit-mode t)))
+(add-hook 'lisp-interaction-mode-hook (lambda () (paredit-mode t)))
+(add-hook 'scheme-mode-hook (lambda () (paredit-mode t)))
+
+;; codeing-hook
+(defun my-coding-hook ()
+  (if window-system (hl-line-mode t))
+  (idle-highlight-mode t))
+
+(add-hook 'emacs-lisp-mode-hook 'my-coding-hook)
+(add-hook 'ruby-mode-hook 'my-coding-hook)
+(add-hook 'c-mode-hook 'my-coding-hook)
+(add-hook 'python-mode-hook 'my-coding-hook)
+(add-hook 'php-mode-hook 'my-coding-hook)
