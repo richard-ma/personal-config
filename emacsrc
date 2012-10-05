@@ -73,6 +73,12 @@
 (add-hook 'lisp-interaction-mode-hook (lambda () (paredit-mode t)))
 (add-hook 'scheme-mode-hook (lambda () (paredit-mode t)))
 
+;; yasnippet-mode
+(add-to-list 'load-path "~/.emacs.d/elpa/yasnippet-0.8.0/")
+(require 'yasnippet)
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/elpa/yasnippet-0.8.0/snippets")
+
 ;; codeing-hook
 (defun my-coding-hook ()
   (if window-system (hl-line-mode t))
@@ -83,3 +89,4 @@
 (add-hook 'c-mode-hook 'my-coding-hook)
 (add-hook 'python-mode-hook 'my-coding-hook)
 (add-hook 'php-mode-hook 'my-coding-hook)
+
