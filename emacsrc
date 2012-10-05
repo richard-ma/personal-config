@@ -12,7 +12,7 @@
 (require 'keybinding)
 
 ;; 配置字体
-(set-default-font "FreeMono-14")
+(set-default-font "FreeMono-18")
 
 ;; 将 yes-or-no 的选择用 y-or-n 代替，每次只要用y或n就可以了
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -23,11 +23,8 @@
 ;; 高亮显示光标所在的行
 (global-hl-line-mode 1)
 
-;; 将TAB间距设置成2
-(setq standard-indent 2)
-
 ;; 使用空格代替TAB
-(setq-default indent-tags-mode nil)
+(setq-default indent-tabs-mode nil)
 
 ;; 关闭备份和自动保存功能
 (setq make-backup-files nil)
@@ -85,14 +82,4 @@
 (add-to-list 'smart-compile-alist
   '("\\.pas\\'"          . "fpc %f"))
 
-;; codeing-hook
-(defun my-coding-hook ()
-  (if window-system (hl-line-mode t))
-  (idle-highlight-mode t))
-
-(add-hook 'emacs-lisp-mode-hook 'my-coding-hook)
-(add-hook 'ruby-mode-hook 'my-coding-hook)
-(add-hook 'c-mode-hook 'my-coding-hook)
-(add-hook 'python-mode-hook 'my-coding-hook)
-(add-hook 'php-mode-hook 'my-coding-hook)
-
+(idle-highlight-mode t)
