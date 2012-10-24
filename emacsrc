@@ -80,6 +80,6 @@
 (add-to-list 'load-path "~/.emacs.d/elpa/smarter-compile-2012.4.9")
 (require 'smarter-compile)
 (add-to-list 'smart-compile-alist
-  '("\\.pas\\'"          . "fpc %f"))
+  '("\\.pas\\'"          . "fpc -o%n_bin %f"))
 
 (idle-highlight-mode t)
