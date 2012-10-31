@@ -505,22 +505,22 @@ set mouse=a
 " About .c and .cpp
 "--------------------------------------------------------------
 " Shortcut for generating ctags
-map <F8> :!ctags -RV -I __THROW --langmap=c:+.h --languages=c,c++ --c-kinds=+px --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+au FileType c,cpp map <F8> :!ctags -RV -I __THROW --langmap=c:+.h --languages=c,c++ --c-kinds=+px --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Load tags for standard C and UNIX
 au FileType c set tags+=~/.vim/tags_stdc
 au FileType c set tags+=/usr/include/tags
 
 "Key mapping for compiling and running C programs.
-au FileType c,cpp map <F5> :!./%<<CR>
-au FileType c,cpp map <F6> :w<CR>:!gcc -std=c99 -Wall -lm -O0 -g % -o %<<CR>
-au FileType c,cpp map <F7> :!gdb ./%<<CR>
+au FileType c,cpp map <F5> :!./%<-bin<CR>
+au FileType c,cpp map <F6> :w<CR>:!gcc -std=c99 -Wall -lm -O0 -g % -o %<-bin<CR>
+au FileType c,cpp map <F7> :!gdb ./%<-bin<CR>
 
 "--------------------------------------------------------------
 " About .pas pascle
 "--------------------------------------------------------------
-au FileType pascal map <F5> :!./%<<CR>
-au FileType pascal map <F6> :!fpc %<CR>
+au FileType pascal map <F5> :!./%<-bin<CR>
+au FileType pascal map <F6> :!fpc -o%<-bin %<CR>
 
 "--------------------------------------------------------------
 " About .lisp common lisp (clisp)
