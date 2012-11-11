@@ -61,3 +61,6 @@ export PATH=$PATH:/home/richardma/opt/heroku-client/
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.2-p320/bin # add Gem to PATH
+
+#cabal
+export PATH=$PATH:$HOME/.cabal/bin
