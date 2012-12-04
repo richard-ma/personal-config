@@ -1,9 +1,9 @@
 #!/bin/bash
 tomato_path="~/bin/tomato_resouces"
 
-at now + 24 minutes -q r 2>/dev/null <<EOF
-timidity -A 800 $tomato_path/prebreak2.mid &
-EOF
+#at now + 24 minutes -q r 2>/dev/null <<EOF
+#timidity -A 800 $tomato_path/prebreak2.mid &
+#EOF
 
 at now + 25 minutes -q r 2>/dev/null <<EOF
 timidity -A 800 $tomato_path/break2.mid &
