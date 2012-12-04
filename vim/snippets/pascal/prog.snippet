@@ -1,0 +1,14 @@
+program ${1:q1000};
+var
+
+begin
+	assign(input, '${2}');
+	assign(output, '${3}');
+	reset(input);
+	rewrite(output);
+
+	${4:code}
+
+	close(input);
+	close(output);
+end.
