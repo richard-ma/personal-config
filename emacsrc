@@ -9,10 +9,11 @@
 
 ;; 其它部分的配置文件
 (add-to-list 'load-path "~/.emacs.d/")
-(require 'keybinding)
+(require 'keybinding) ;; 快捷键绑定
+(require 'cstyle) ;; C语言设置
 
 ;; 配置字体
-(set-default-font "FreeMono-18")
+(set-default-font "FreeMono-14")
 
 ;; 将 yes-or-no 的选择用 y-or-n 代替，每次只要用y或n就可以了
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -50,6 +51,7 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 (global-set-key "\C-ca" 'org-agenda)
 (global-font-lock-mode 1)
+(setq org-log-done 'time) ;; 记录TODO完成时间
 
 ;; slime-mode
 (add-to-list 'load-path "~/.emacs.d/plugins/slime/")
