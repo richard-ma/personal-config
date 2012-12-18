@@ -513,7 +513,7 @@ au FileType c set tags+=/usr/include/tags
 
 "Key mapping for compiling and running C programs.
 au FileType c,cpp map <F5> :!./%<-bin<CR>
-au FileType c,cpp map <F6> :w<CR>:!gcc -std=c99 -Wall -lm -O0 -g % -o %<-bin<CR>
+au FileType c,cpp map <F6> :w<CR>:!gcc % -std=c99 -Wall -lm -O0 -g -o %<-bin<CR>
 au FileType c,cpp map <F7> :!gdb ./%<-bin<CR>
 
 "--------------------------------------------------------------
