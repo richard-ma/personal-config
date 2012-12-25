@@ -3,14 +3,14 @@
 (add-to-list 'package-archives '("marmalade"."http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-;; 配色主题
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'solarized-dark t)
-
 ;; 其它部分的配置文件
 (add-to-list 'load-path "~/.emacs.d/")
 (require 'keybinding) ;; 快捷键绑定
 (require 'cstyle) ;; C语言设置
+
+;; 配色主题
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'solarized-dark t)
 
 ;; 配置字体
 (set-default-font "FreeMono-14")
@@ -83,6 +83,6 @@
 (add-to-list 'load-path "~/.emacs.d/elpa/smarter-compile-2012.4.9")
 (require 'smarter-compile)
 (add-to-list 'smart-compile-alist
-  '("\\.pas\\'"          . "fpc -o%n_bin %f"))
+  '("\\.pas\\'"          . "fpc -o%n-bin %f"))
 
 (idle-highlight-mode t)

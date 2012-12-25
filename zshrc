@@ -42,6 +42,11 @@ if [ -e ~/bin ]; then
     export PATH=$PATH:~/bin/
 fi
 
+if [[ -n ${INSIDE_EMACS} ]]; then
+    # This shell runs inside an Emacs *shell*
+    unsetopt zle
+fi
+
 # dh_make
 export DEBEMAIL="richard.ma.19850509@gmail.com"
 export DEBFULLNAME="Richard Ma"
