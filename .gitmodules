@@ -4,3 +4,6 @@
 [submodule "vim/bundle/vim-rails-submodule"]
 	path = vim/bundle/vim-rails-submodule
 	url = git://github.com/tpope/vim-rails.git
+[submodule "tmuxifier"]
+	path = tmuxifier
+	url = git://github.com/jimeh/tmuxifier.git
