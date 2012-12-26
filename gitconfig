@@ -24,7 +24,7 @@
     fdu = fetch -v origin dev:update-dev
     mdu = merge -v update-dev
     ddu = branch -d update-dev
-    fo = fetch -v official master:offical
+    fo = fetch -v official master:official
     mo = merge -v official
     do = branch -d official
 [diff]
