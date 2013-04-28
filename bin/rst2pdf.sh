@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
 readonly sourcefile=$1
-readonly targetfile=$2
 
 #######################################
 # Main
-rst2odt $sourcefile > temp.odt
-libreoffice --headless --invisible --convert-to pdf:writer_pdf_Export temp.odt
+
+name=$(ls $sourcefile | cut -d. -f1)
+
+rst2odt.py $sourcefile > $name.odt
+libreoffice --headless --invisible --convert-to pdf:writer_pdf_Export $name.odt
+rm $name.odt
 
 exit 0
