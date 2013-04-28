@@ -557,7 +557,7 @@ au FileType rst setl wrap
 "Key mapping for compiling and watching LaTeX scripts.
 au FileType rst map <F5> :!evince ./_build/latex/*.pdf >/dev/null 2>&1 &<CR>
 au FileType rst map <F6> :!make latex && cd ./_build/latex/ && xelatex *.tex<CR>
-au FileType rst map <F7> :!rst2odt.py % > %<.odt<CR>
+au FileType rst map <F7> :!rst2pdf.sh %<CR>
 
 "--------------------------------------------------------------
 " About vimwiki 
