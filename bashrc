@@ -131,7 +131,7 @@ export TMUXIFIER_LAYOUT_PATH="$HOME/.tmuxifier-layouts"
 [[ -s "$HOME/.tmuxifier/init.sh" ]] && source "$HOME/.tmuxifier/init.sh"
 
 #heroku
-export PATH=$PATH:/home/richardma/opt/heroku-client/
+export PATH=$PATH:/usr/local/heroku/bin
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.2-p320/bin # add Gem to PATH
