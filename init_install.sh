@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
+# Add PPA
 sudo add-apt-repository ppa:libreoffice/ppa
 
-# update the system
+# Update the system
 sudo apt-get update && sudo apt-get dist-upgrade
 
 sudo apt-get -y install \
@@ -24,11 +25,12 @@ sudo apt-get -y install \
     php5-mysql \
     phpmyadmin \
     gnome-shell \
-    python-pip 
+    python-pip \
+    gimp
 
 # Python Pip
-#sudo pip install docutils
+sudo pip install docutils
 
 # change default sh (The Last One)
-#chsh -s /bin/zsh
-#echo "Please logout to make default shell options work!"
+chsh -s /bin/zsh
+echo "Please logout to make default shell options work!"
