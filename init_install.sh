@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo add-apt-repository ppa:libreoffice/ppa
+
 # update the system
 sudo apt-get update && sudo apt-get dist-upgrade
 
@@ -8,6 +10,7 @@ sudo apt-get -y install \
     zsh \
     build-essential \
     fpc \
+    openjdk-7-jre-headless \
     git \
     subversion \
     rar \
