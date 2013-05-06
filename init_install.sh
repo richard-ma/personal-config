@@ -2,6 +2,7 @@
 
 # Add PPA
 sudo add-apt-repository ppa:libreoffice/ppa
+sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 
 # Update the system
 sudo apt-get update && sudo apt-get dist-upgrade
