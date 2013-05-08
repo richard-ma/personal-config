@@ -10,6 +10,7 @@ sudo apt-get update && sudo apt-get dist-upgrade
 sudo apt-get -y install \
     vim \
     zsh \
+    openssh-server \
     build-essential \
     fpc \
     openjdk-7-jre-headless \
