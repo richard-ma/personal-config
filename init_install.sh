@@ -18,6 +18,7 @@ sudo apt-get -y install \
     subversion \
     rar \
     unrar \
+    curl \
     imagemagick \
     apache2 \
     php5 \
