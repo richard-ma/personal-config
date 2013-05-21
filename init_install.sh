@@ -26,6 +26,7 @@ sudo apt-get -y install \
     libapache2-mod-auth-mysql \
     php5-mysql \
     php5-curl \
+    php-pear \
     phpmyadmin \
     gnome-shell \
     python-pip \
