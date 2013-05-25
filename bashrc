@@ -143,5 +143,3 @@ export PATH=$PATH:$HOME/.cabal/bin
 # If not running interactively, do not do anything
 #[[ $- != *i* ]] && return
 #[[ $TERM != screen* ]] && exec tmux
-
-PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting

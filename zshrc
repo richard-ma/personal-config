@@ -69,5 +69,3 @@ export PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.2-p320/bin # add Gem to PATH
 
 #cabal
 export PATH=$PATH:$HOME/.cabal/bin
-
-PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
