@@ -165,11 +165,8 @@ let g:solarized_termcolors=256
 colorscheme solarized
 set background=dark
 
-set encoding=utf8
-try
-lang en_US
-catch
-endtry
+set encoding:utf-8
+set fileencodings:utf-8,gbk
 
 set ffs=unix,dos,mac "Default file types
 
