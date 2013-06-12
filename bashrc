@@ -133,8 +133,8 @@ export TMUXIFIER_LAYOUT_PATH="$HOME/.tmuxifier-layouts"
 #heroku
 export PATH=$PATH:/usr/local/heroku/bin
 
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.2-p320/bin # add Gem to PATH
+#rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 #cabal
 export PATH=$PATH:$HOME/.cabal/bin
