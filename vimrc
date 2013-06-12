@@ -166,7 +166,6 @@ colorscheme solarized
 set background=dark
 
 set encoding:utf-8
-set fileencodings:utf-8,gbk
 set fileencoding:
 
 set ffs=unix,dos,mac "Default file types
