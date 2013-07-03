@@ -41,5 +41,5 @@ rm $user_output_file
 
 # Make counting.
 if [[ ! -z $DEBUG ]]; then
-    echo "[$(expr $ac_cnt / $total_cnt \* 100)%] Total: $total_cnt [AC: $ac_cnt | WA: $(expr $total_cnt - $ac_cnt)]"
+    echo "[$(echo "scale=2; ($ac_cnt / $total_cnt) * 100" | bc)%] Total: $total_cnt [AC: $ac_cnt | WA: $(expr $total_cnt - $ac_cnt)]"
 fi
