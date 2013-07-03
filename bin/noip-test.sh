@@ -20,11 +20,7 @@ for input_file in $(ls $DATA_DIR/*.in); do
     $BIN_FILE < $input_file > $user_output_file
 
     # Compire the user output file and standard output file.
-    if [[ "$DEBUG" = "-cr" ]]; then
-        diff --strip-trailing-cr $user_output_file $standard_output_file > /dev/null
-    else   
-        diff $user_output_file $standard_output_file > /dev/null
-    fi
+    diff --strip-trailing-cr $user_output_file $standard_output_file > /dev/null
 
     if [ $? -eq 0 ]; then
         ac_cnt=$(expr $ac_cnt + 1)
