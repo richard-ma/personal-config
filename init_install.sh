@@ -18,6 +18,7 @@ sudo apt-get -y install \
     subversion \
     rar \
     unrar \
+    tofrodos \
     curl \
     imagemagick \
     apache2 \
