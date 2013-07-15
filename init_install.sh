@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Add PPA
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo add-apt-repository ppa:libreoffice/ppa
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 

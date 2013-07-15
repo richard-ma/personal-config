@@ -69,3 +69,5 @@ export PATH=$PATH:/usr/local/heroku/bin
 
 #cabal
 export PATH=$PATH:$HOME/.cabal/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
