@@ -102,6 +102,10 @@ map <Leader>e :e! ~/.vimrc<CR>
 " When vimrc is edited, reload it
 autocmd! bufwritepost ~/.vimrc source $HOME/.vimrc
 
+" create session file and viminfo file
+au VimLeave * mksession! ~/.vim-session/%:t.session
+au VimLeave * wviminfo! ~/.vim-session/%:t.viminfo
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
