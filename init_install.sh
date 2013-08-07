@@ -31,7 +31,6 @@ sudo apt-get -y install \
     php5-curl \
     php-pear \
     phpmyadmin \
-    gnome-shell \
     python-pip \
     gimp
 
