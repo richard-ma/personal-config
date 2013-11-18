@@ -19,8 +19,8 @@ select_pane 0
 #run_cmd "top"     # runs in active pane
 #run_cmd "date" 1  # runs in pane 1
 run_cmd "vim" 0         # runs in active pane
-run_cmd "rails c" 1     # runs in pane 1
-run_cmd "rails s" 2     # runs in pane 2
+run_cmd "bundle exec guard" 1     # runs in pane 1
+run_cmd "rails s -d" 2     # runs in pane 2
 
 # Paste text
 #send_keys "top"    # paste into active pane
