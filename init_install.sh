@@ -32,7 +32,8 @@ sudo apt-get -y install \
     php-pear \
     phpmyadmin \
     python-pip \
-    gimp
+    gimp \
+    miredo
 
 # Python Pip
 sudo pip install docutils
