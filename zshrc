@@ -71,3 +71,6 @@ export PATH=$PATH:/usr/local/heroku/bin
 export PATH=$PATH:$HOME/.cabal/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+#aliases
+[[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases" 

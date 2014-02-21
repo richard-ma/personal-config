@@ -1,0 +1,16 @@
+# unzip gbk version
+alias unzipgbk='unzip -O GBK'
+
+# Show history
+alias history='fc -l 1'
+
+# List direcory contents
+alias ls='ls --color=always'
+alias ll='ls -lh'
+alias la='ls -A'
+alias lal='ls -Alh'
+alias l='ls -CF'
+alias grep='grep --color=always'
+
+# Create web http server with python
+alias server='python -m SimpleHTTPServer'

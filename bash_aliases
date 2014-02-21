@@ -1,7 +1,0 @@
-alias cd1='cd ..'
-alias cd2='cd ../..'
-alias cd3='cd ../../..'
-alias cd4='cd ../../../..'
-alias cd5='cd ../../../../..'
-alias ssh-richard-ma='ssh richard-ma.gicp.net'
-alias vbm='VBoxManage'

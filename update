@@ -16,8 +16,8 @@ function do_update()
 }
 
 # bashrc and bash_aliases
-source_file="$PWD/bash_aliases"
-target_file="$HOME/.bash_aliases"
+source_file="$PWD/aliases"
+target_file="$HOME/.aliases"
 do_update $source_file $target_file
 
 source_file="$PWD/inputrc"
