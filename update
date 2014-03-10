@@ -84,6 +84,11 @@ source_file="$PWD/tmuxifier-layouts"
 target_file="$HOME/.tmuxifier-layouts"
 do_update $source_file $target_file
 
+# pip settings
+source_file="$PWD/pip/pip.conf"
+target_file="$HOME/.pip/pip.conf"
+do_update $source_file $target_file
+
 #file="$HOME/.local/share/applications/mimeapps.list"
 #if [ -e $file ]; then
 #    echo $DEBUG_STR" Delete old file(s): \"$file\""
