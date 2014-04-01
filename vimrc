@@ -683,8 +683,3 @@ nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>gr :Gread<CR>
 nnoremap <Leader>gd :Gdiff<CR>
-
-"vim-slime
-let g:slime_target = "tmux"
-"let g:slime_paste_file = "$HOME/.slime_paste" " Use practical file to storage paste contents.
-let g:slime_paste_file = tempname() " Use temp file to storage paste contents.
