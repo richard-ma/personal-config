@@ -33,7 +33,8 @@ sudo apt-get -y install \
     phpmyadmin \
     python-pip \
     gimp \
-    miredo
+    miredo \
+    exuberant-ctags
 
 # Python Pip
 sudo pip install docutils
