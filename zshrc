@@ -64,13 +64,5 @@ export TMUXIFIER_LAYOUT_PATH="$HOME/.tmuxifier-layouts"
 #heroku
 export PATH=$PATH:/usr/local/heroku/bin
 
-#rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-
-#cabal
-export PATH=$PATH:$HOME/.cabal/bin
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 #aliases
 [[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases" 

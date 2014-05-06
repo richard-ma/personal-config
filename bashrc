@@ -125,15 +125,7 @@ export TMUXIFIER_LAYOUT_PATH="$HOME/.tmuxifier-layouts"
 #heroku
 export PATH=$PATH:/usr/local/heroku/bin
 
-#rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-
-#cabal
-export PATH=$PATH:$HOME/.cabal/bin
-
 # ONLY FOR BASH!!!
 # If not running interactively, do not do anything
 #[[ $- != *i* ]] && return
 #[[ $TERM != screen* ]] && exec tmux
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
