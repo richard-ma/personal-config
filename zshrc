@@ -66,3 +66,6 @@ export PATH=$PATH:/usr/local/heroku/bin
 
 #aliases
 [[ -s "$HOME/.aliases" ]] && source "$HOME/.aliases" 
+
+#functions
+[[ -s "$HOME/.functions" ]] && source "$HOME/.functions" 

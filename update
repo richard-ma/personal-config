@@ -20,6 +20,11 @@ source_file="$PWD/aliases"
 target_file="$HOME/.aliases"
 do_update $source_file $target_file
 
+# bashrc and bash functions
+source_file="$PWD/functions"
+target_file="$HOME/.functions"
+do_update $source_file $target_file
+
 source_file="$PWD/inputrc"
 target_file="$HOME/.inputrc"
 do_update $source_file $target_file
