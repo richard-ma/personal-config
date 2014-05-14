@@ -1,10 +1,16 @@
 # unzip gbk version
 alias unzipgbk='unzip -O GBK'
 
+# return up directory
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+
 # Show history
 alias history='fc -l 1'
 
-# List direcory contents
+# List directory contents
 alias ls='ls --color=always'
 alias ll='ls -lh'
 alias la='ls -A'
