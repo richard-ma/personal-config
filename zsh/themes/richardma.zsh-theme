@@ -1,7 +1,7 @@
 # Richard Ma's zsh prompt
 local return_code="%(?..%{$fg[red]%}%?%{$reset_color%} )"
 
-PROMPT='%{$fg_bold[yellow]%}┌─[ %{$fg_bold[cyan]%}%M %{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)$(svn_prompt_info)
+PROMPT='%{$fg_bold[yellow]%}┌─[ %{$fg_bold[green]%}%M %{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)$(svn_prompt_info)
 %{$fg_bold[yellow]%}└─[ ${return_code} %{$fg[blue]%}[!%!] %{$fg_bold[yellow]%}%# %{$reset_color%}'
 RPROMPT='%{$fg_bold[red]%} %{$fg_bold[yellow]%}%j%{$reset_color%}'
 
