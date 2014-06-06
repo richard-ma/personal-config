@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
 
-# Add PPA
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-sudo add-apt-repository ppa:libreoffice/ppa
-sudo add-apt-repository ppa:otto-kesselgulasch/gimp
-
-# Update the system
-sudo apt-get update && sudo apt-get dist-upgrade
-
 sudo apt-get -y install \
     vim \
     zsh \
@@ -32,12 +24,10 @@ sudo apt-get -y install \
     php-pear \
     phpmyadmin \
     python-pip \
+    python-vte \
     gimp \
     miredo \
     exuberant-ctags
-
-# Python Pip
-sudo pip install docutils
 
 # change default sh (The Last One)
 chsh -s /bin/zsh
