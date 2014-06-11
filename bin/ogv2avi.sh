@@ -8,6 +8,6 @@ for ((i=0; i<=(N-1); i++))
 do
     echo "converting" $1
     filename=${1%.*}
-    ffmpeg -i "$1" -vcodec mpeg4 -sameq -acodec libmp3lame $filename.avi
+    ffmpeg -i "$1" -vcodec mpeg4 -qscale 0 -acodec libmp3lame $filename.avi
     shift 1
 done
