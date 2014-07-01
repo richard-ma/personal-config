@@ -37,7 +37,6 @@
 "
 "    -> Cope
 "    -> Minibuffer plugin
-"    -> Omni complete functions
 "    -> JavaScript section
 "
 "
@@ -68,8 +67,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pathogen config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#runtime_append_all_bundles()
-
+call pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -414,29 +412,6 @@ autocmd BufRead,BufNew :call UMiniBufExplorer
 
 map <F4> :TMiniBufExplorer<cr>
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Omni complete functions
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has("autocmd") && exists("+omnifunc")
-    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
-    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
-    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
-    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete 
-    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags 
-
-    autocmd FileType *
-        \   if &omnifunc == "" |
-        \       setlocal omnifunc=syntaxcomplete#Complete |       
-        \   endif
-endif
-
-let OmniCpp_NamespaceSearch = 2
-let OmniCpp_MayCompleteDot = 1
-let OmniCpp_MayCompleteArrow = 1
-let OmniCpp_MayCompleteScope = 1
-let OmniCpp_SelectFirstItem = 0
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -663,18 +638,18 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 "neocomplcache
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_auto_completion_start_length = 3
-let g:neocomplcache_min_keyword_length = 3
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_enable_ignore_case = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_auto_select = 1
-"neocomplcache dictionary settings
-let g:neocomplcache_dictionary_filetype_lists = {
-    \   'default' : '~/.vim/dict/user_info.dict',
-    \   'c'       : '~/.vim/dict/tags_stdc.dict'
-\ }
+"let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_auto_completion_start_length = 3
+"let g:neocomplcache_min_keyword_length = 3
+"let g:neocomplcache_min_syntax_length = 3
+"let g:neocomplcache_enable_ignore_case = 1
+"let g:neocomplcache_enable_smart_case = 1
+"let g:neocomplcache_enable_auto_select = 1
+""neocomplcache dictionary settings
+"let g:neocomplcache_dictionary_filetype_lists = {
+    "\   'default' : '~/.vim/dict/user_info.dict',
+    "\   'c'       : '~/.vim/dict/tags_stdc.dict'
+"\ }
 
 "surround
 xmap <Leader>s <Plug>Vsurround
