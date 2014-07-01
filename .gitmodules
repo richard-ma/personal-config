@@ -4,3 +4,6 @@
 [submodule "tmuxifier"]
 	path = tmuxifier
 	url = git://github.com/jimeh/tmuxifier.git
+[submodule "vim/bundle/ultisnips-submodule"]
+	path = vim/bundle/ultisnips-submodule
+	url = https://github.com/SirVer/ultisnips.git
