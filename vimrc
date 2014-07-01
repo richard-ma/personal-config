@@ -50,10 +50,6 @@
 "       Makes it easy to work with surrounding text:
 "           info -> :help surround
 "
-"     > snipMate.vim - http://www.vim.org/scripts/script.php?script_id=2540
-"       Snippets for many languages (similar to TextMate's):
-"           info -> :help snipMate
-"
 "     > fuzzyfinder - http://www.vim.org/scripts/script.php?script_id=1984
 "       Find files fast (similar to TextMate's feature):
 "           info -> :help fuzzyfinder@en
@@ -655,10 +651,6 @@ let g:Tlist_Show_One_File = 1
 let g:Tlist_GainFocus_On_ToggleOpen = 1
 let g:Tlist_Sort_Type = "order"
 let g:Tlist_Javascript_settings = 'javascript;s:string;a:array;o:object;f:function;m:member'
-
-"SnipMate
-"let g:snips_author = "Richard Ma (richard_ma)"
-"let g:snips_email = "richard.ma.19850509@gmail.com"
 
 "UltiSnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
