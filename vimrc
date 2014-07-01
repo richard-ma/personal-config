@@ -657,8 +657,18 @@ let g:Tlist_Sort_Type = "order"
 let g:Tlist_Javascript_settings = 'javascript;s:string;a:array;o:object;f:function;m:member'
 
 "SnipMate
-let g:snips_author = "Richard Ma (richard_ma)"
-let g:snips_email = "richard.ma.19850509@gmail.com"
+"let g:snips_author = "Richard Ma (richard_ma)"
+"let g:snips_email = "richard.ma.19850509@gmail.com"
+
+"UltiSnips
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+" snippets
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 "neocomplcache
 let g:neocomplcache_enable_at_startup = 1
