@@ -638,18 +638,18 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 "neocomplcache
-"let g:neocomplcache_enable_at_startup = 1
-"let g:neocomplcache_auto_completion_start_length = 3
-"let g:neocomplcache_min_keyword_length = 3
-"let g:neocomplcache_min_syntax_length = 3
-"let g:neocomplcache_enable_ignore_case = 1
-"let g:neocomplcache_enable_smart_case = 1
-"let g:neocomplcache_enable_auto_select = 1
-""neocomplcache dictionary settings
-"let g:neocomplcache_dictionary_filetype_lists = {
-    "\   'default' : '~/.vim/dict/user_info.dict',
-    "\   'c'       : '~/.vim/dict/tags_stdc.dict'
-"\ }
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_auto_completion_start_length = 3
+let g:neocomplcache_min_keyword_length = 3
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_enable_ignore_case = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_auto_select = 1
+"neocomplcache dictionary settings
+let g:neocomplcache_dictionary_filetype_lists = {
+    \   'default' : '~/.vim/dict/user_info.dict',
+    \   'c'       : '~/.vim/dict/tags_stdc.dict'
+\ }
 
 "surround
 xmap <Leader>s <Plug>Vsurround
