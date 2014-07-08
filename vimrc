@@ -660,3 +660,6 @@ nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>gr :Gread<CR>
 nnoremap <Leader>gd :Gdiff<CR>
+
+"vim-multiple-cursors
+"Use default settings
