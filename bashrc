@@ -133,3 +133,6 @@ export PATH=$PATH:/usr/local/heroku/bin
 # If not running interactively, do not do anything
 #[[ $- != *i* ]] && return
 #[[ $TERM != screen* ]] && exec tmux
+
+# rvm
+source ~/.profile

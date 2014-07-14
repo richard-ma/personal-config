@@ -29,6 +29,10 @@ source_file="$PWD/inputrc"
 target_file="$HOME/.inputrc"
 do_update $source_file $target_file
 
+source_file="$PWD/profile"
+target_file="$HOME/.profile"
+do_update $source_file $target_file
+
 source_file="$PWD/bashrc"
 target_file="$HOME/.bashrc"
 do_update $source_file $target_file
@@ -37,6 +41,7 @@ echo 'You must exit this shell and login again to enable new configuration(s).'
 source_file="$PWD/zshrc"
 target_file="$HOME/.zshrc"
 do_update $source_file $target_file
+echo 'You must exit this shell and login again to enable new configuration(s).'
 
 # vim settings
 source_file="$PWD/vimrc"

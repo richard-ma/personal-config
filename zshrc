@@ -69,3 +69,7 @@ export PATH=$PATH:/usr/local/heroku/bin
 
 #functions
 [[ -s "$HOME/.functions" ]] && source "$HOME/.functions" 
+
+# rvm
+source ~/.profile
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
