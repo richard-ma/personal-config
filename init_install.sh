@@ -30,7 +30,8 @@ sudo apt-get -y install \
     python-vte \
     gimp \
     miredo \
-    exuberant-ctags
+    exuberant-ctags \
+    p7zip
 
 # change default sh (The Last One)
 chsh -s /bin/zsh
