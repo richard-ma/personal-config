@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Update the system
-sudo apt-get update && sudo apt-get dist-upgrade
+sudo apt-get -y update && sudo apt-get -y dist-upgrade
 
 sudo apt-get -y install \
     vim \
@@ -30,7 +30,14 @@ sudo apt-get -y install \
     python-vte \
     gimp \
     miredo \
-    exuberant-ctags
+    exuberant-ctags \
+    p7zip
+
+## PPA
+# ffmpeg
+sudo add-apt-repository -y ppa:jon-severinsson/ffmpeg
+sudo apt-get -y update
+sudo apt-get -y install ffmpeg
 
 # change default sh (The Last One)
 chsh -s /bin/zsh
