@@ -663,3 +663,7 @@ nnoremap <Leader>gd :Gdiff<CR>
 
 "vim-multiple-cursors
 "Use default settings
+
+" Auto load and save session
+au VimLeave * mksession! ~/Session.vim
+nmap <F8> :source ~/Session.vim<CR>
