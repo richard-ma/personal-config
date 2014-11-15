@@ -18,7 +18,7 @@ select_pane 0
 # Run commands.
 #run_cmd "top"     # runs in active pane
 #run_cmd "date" 1  # runs in pane 1
-run_cmd "vim" 0         # runs in active pane
+run_cmd "vim -S cube_session.vim" 0         # runs in active pane
 run_cmd "bundle exec guard" 1     # runs in pane 1
 run_cmd "rails c" 2     # runs in pane 2
 
