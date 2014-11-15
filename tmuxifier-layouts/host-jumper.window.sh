@@ -20,7 +20,7 @@ select_pane 0
 #run_cmd "date" 1  # runs in pane 1
 run_cmd "vim" 0         # runs in active pane
 run_cmd "bundle" 1     # runs in pane 1
-run_cmd "rails s" 2     # runs in pane 2
+run_cmd "guard" 2     # runs in pane 2
 
 # Paste text
 #send_keys "top"    # paste into active pane
