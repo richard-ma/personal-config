@@ -665,5 +665,10 @@ nnoremap <Leader>gd :Gdiff<CR>
 "Use default settings
 
 " Auto load and save session
-"au VimLeave * mksession! ~/Session.vim
-nmap <F8> :source ./Session.vim<CR>
+if filereadable('./sessoin.vim') == 1
+    au VimEnter * source ./session.vim
+endif
+
+if filewritable('./sessoin.vim') == 1
+    au VimLeave * mksession! ./session.vim
+endif
