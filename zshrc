@@ -76,3 +76,6 @@ source ~/.profile
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# opencv
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages

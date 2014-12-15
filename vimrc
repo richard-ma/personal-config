@@ -511,7 +511,7 @@ au FileType ruby map <F7> :!chmod a+x %<CR>
 "--------------------------------------------------------------
 " About .py python
 "--------------------------------------------------------------
-au FileType python map <F5> :!./%<CR>
+au FileType python map <F5> :!python %<CR>
 au FileType python map <F6> :!python %<CR>
 au FileType python map <F7> :!chmod a+x %<CR>
 

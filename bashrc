@@ -136,3 +136,6 @@ export PATH=$PATH:/usr/local/heroku/bin
 
 # rvm
 source ~/.profile
+
+# opencv
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
