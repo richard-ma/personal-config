@@ -79,3 +79,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # opencv
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
