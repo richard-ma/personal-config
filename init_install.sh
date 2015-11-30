@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# add source lists
+sudo cp ./sourcelist/*.list /etc/apt/sources.list.d/
+
 # Update the system
 sudo apt-get -y update && sudo apt-get -y dist-upgrade
 
@@ -31,7 +34,8 @@ sudo apt-get -y install \
     gimp \
     miredo \
     exuberant-ctags \
-    p7zip
+    p7zip \
+    google-chrome-stable
 
 ## PPA
 # ffmpeg
