@@ -8,6 +8,13 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
+#github.com
+74.125.237.1 dl-ssl.google.com
+173.194.127.200 groups.google.com
+192.30.252.131 github.com
+185.31.16.185 github.global.ssl.fastly.net
+74.125.128.95 ajax.googleapis.com
+
 # vimbits
 50.16.215.20 vimbits.com
 
