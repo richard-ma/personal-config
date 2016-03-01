@@ -35,13 +35,13 @@ sudo apt-get -y install \
     miredo \
     exuberant-ctags \
     p7zip \
-    google-chrome-stable
+#    google-chrome-stable
 
 ## PPA
 # ffmpeg
-sudo add-apt-repository -y ppa:jon-severinsson/ffmpeg
-sudo apt-get -y update
-sudo apt-get -y install ffmpeg
+#sudo add-apt-repository -y ppa:jon-severinsson/ffmpeg
+#sudo apt-get -y update
+#sudo apt-get -y install ffmpeg
 
 # change default sh (The Last One)
 chsh -s /bin/zsh
