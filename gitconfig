@@ -24,9 +24,9 @@
     fdu = fetch -v origin dev:update-dev
     mdu = merge -v update-dev
     ddu = branch -d update-dev
-    fo = fetch -v official master:official
-    mo = merge -v official
-    do = branch -d official
+    fo = fetch -v upstream master:upstream
+    mo = merge -v upstream
+    do = branch -d upstream
 [diff]
 	renamelimit = 0
 [merge]
