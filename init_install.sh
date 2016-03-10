@@ -8,8 +8,6 @@ sudo apt-get -y update && sudo apt-get -y dist-upgrade
 
 sudo apt-get -y install \
     vim \
-    fcitx \
-    fcitx-sunpinyin \
     zsh \
     openssh-server \
     build-essential \
