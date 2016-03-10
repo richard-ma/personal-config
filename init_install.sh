@@ -8,7 +8,6 @@ sudo apt-get -y update && sudo apt-get -y dist-upgrade
 
 sudo apt-get -y install \
     vim \
-    emacs \
     fcitx \
     fcitx-sunpinyin \
     zsh \
