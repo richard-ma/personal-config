@@ -23,7 +23,9 @@ sudo apt-get -y install \
     gimp \
     #miredo \
     p7zip \
-    ibus-sunpinyin
+    ibus-sunpinyin \
+    openjdk-9-jre-headless \
+    python-notify
 
 ## PPA
 # ffmpeg
