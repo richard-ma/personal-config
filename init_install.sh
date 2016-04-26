@@ -11,31 +11,21 @@ sudo apt-get -y install \
     zsh \
     openssh-server \
     build-essential \
-    fpc \
-    openjdk-7-jre-headless \
     git \
-    subversion \
     rar \
     unrar \
     tofrodos \
     curl \
     imagemagick \
-    apache2 \
-    php5 \
-    libapache2-mod-php5 \
-    mysql-server \
-    libapache2-mod-auth-mysql \
-    php5-mysql \
-    php5-curl \
-    php-pear \
     phpmyadmin \
     python-pip \
     python-vte \
     gimp \
-    miredo \
-    exuberant-ctags \
+    #miredo \
     p7zip \
-#    google-chrome-stable
+    ibus-sunpinyin \
+    openjdk-9-jre-headless \
+    python-notify
 
 ## PPA
 # ffmpeg
