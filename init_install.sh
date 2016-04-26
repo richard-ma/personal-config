@@ -17,6 +17,8 @@ sudo apt-get -y install \
     tofrodos \
     curl \
     imagemagick \
+    php-mbstring \
+    php-gettext \
     phpmyadmin \
     python-pip \
     python-vte \
@@ -25,7 +27,7 @@ sudo apt-get -y install \
     p7zip \
     ibus-sunpinyin \
     openjdk-9-jre-headless \
-    python-notify
+    python-notify \
 
 ## PPA
 # ffmpeg
