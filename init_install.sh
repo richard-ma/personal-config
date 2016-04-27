@@ -4,7 +4,8 @@
 sudo cp ./sourcelist/*.list /etc/apt/sources.list.d/
 
 # Update the system
-sudo apt-get -y update && sudo apt-get -y dist-upgrade
+sudo apt-get -y update
+sudo apt-get -y dist-upgrade
 
 sudo apt-get -y install \
     vim \
@@ -24,11 +25,11 @@ sudo apt-get -y install \
     python-pip \
     python-vte \
     gimp \
-    #miredo \
     p7zip \
     ibus-sunpinyin \
     openjdk-9-jre-headless \
     python-notify \
+    #miredo \
 
 ## PPA
 # ffmpeg
