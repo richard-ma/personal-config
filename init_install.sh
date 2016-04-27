@@ -8,6 +8,7 @@ sudo apt-get -y update && sudo apt-get -y dist-upgrade
 
 sudo apt-get -y install \
     vim \
+    vim-nox-py2 \
     zsh \
     openssh-server \
     build-essential \
