@@ -9,7 +9,7 @@ sudo apt-get -y dist-upgrade
 
 sudo apt-get -y install \
     vim \
-    vim-nox-py2 \
+    #vim-nox-py2 \
     zsh \
     openssh-server \
     build-essential \
@@ -19,15 +19,12 @@ sudo apt-get -y install \
     tofrodos \
     curl \
     imagemagick \
-    php-mbstring \
-    php-gettext \
     phpmyadmin \
     python-pip \
     python-vte \
     gimp \
     p7zip \
     ibus-sunpinyin \
-    openjdk-9-jre-headless \
     python-notify \
     #miredo \
 
@@ -36,6 +33,11 @@ sudo apt-get -y install \
 #sudo add-apt-repository -y ppa:jon-severinsson/ffmpeg
 #sudo apt-get -y update
 #sudo apt-get -y install ffmpeg
+
+# java
+sudo add-apt-repository -y ppa:webupd8team/java
+sudo apt-get -y update
+sudo apt-get -y install oracle-java8-installer oracle-java8-set-default
 
 # change default sh (The Last One)
 chsh -s /bin/zsh
