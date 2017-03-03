@@ -16,6 +16,8 @@ channels = (
   { name = "#ubuntu-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
   { name = "#debian-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
   { name = "#gentoo-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
+  { name = "#magento"; chatnet = "FREENODE"; autojoin = "yes"; },
+  { name = "#magento2"; chatnet = "FREENODE"; autojoin = "yes"; },
   { name = "#tjlug"; chatnet = "FREENODE"; autojoin = "yes"; },
 );
 
@@ -182,9 +184,9 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "richardma";
-    user_name = "richardma";
-    nick = "richardma";
+    real_name = "richard_ma";
+    user_name = "richard_ma";
+    nick = "richard_ma";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 };
