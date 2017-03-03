@@ -16,6 +16,7 @@ channels = (
   { name = "#ubuntu-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
   { name = "#debian-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
   { name = "#gentoo-cn"; chatnet = "FREENODE"; autojoin = "yes"; },
+  { name = "#tjlug"; chatnet = "FREENODE"; autojoin = "yes"; },
 );
 
 aliases = {
