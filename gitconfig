@@ -21,7 +21,7 @@
     du = branch -d update
     pod = push -v origin dev:dev
     podt = push -v origin dev:dev --tags
-    pomd = push -v origin master:production
+    pomp = push -v origin master:production
     fdu = fetch -v origin dev:update-dev
     mdu = merge -v update-dev
     ddu = branch -d update-dev
