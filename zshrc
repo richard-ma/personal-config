@@ -84,3 +84,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # for rails girls china project to use taobao gem source
 export RUBYTAOBAO=1
+
+# host-monitor
+export HOST_MONITOR_URI=http://ddns.richardma.info/hosts/
