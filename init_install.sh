@@ -26,6 +26,7 @@ sudo apt-get -y install \
     p7zip \
     ibus-sunpinyin \
     python-notify \
+    exuberant-ctags \
     #miredo \
 
 ## PPA
