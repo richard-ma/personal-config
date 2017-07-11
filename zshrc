@@ -84,3 +84,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # for rails girls china project to use taobao gem source
 export RUBYTAOBAO=1
+
+# laravel
+export PATH=$PATH:~/.config/composer/vendor/bin
