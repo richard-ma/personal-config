@@ -517,6 +517,13 @@ au FileType python map <F6> :!python %<CR>
 au FileType python map <F7> :!chmod a+x %<CR>
 
 "--------------------------------------------------------------
+" About .php PHP
+"--------------------------------------------------------------
+au FileType php map <F5> :!php %<CR>
+au FileType php map <F6> :!chmod a+x %<CR>
+au FileType php map <F7> :!chmod a+x %<CR>
+
+"--------------------------------------------------------------
 " About tex 
 "--------------------------------------------------------------
 au FileType tex map <F5> :!evince %<.pdf >/dev/null 2>&1 &<CR>
