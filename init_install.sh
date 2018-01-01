@@ -27,6 +27,7 @@ sudo apt-get -y install \
     ibus-sunpinyin \
     python-notify \
     exuberant-ctags \
+    tmux \
     #miredo \
 
 ## PPA
