@@ -7,7 +7,7 @@ window_root "~/Projects/dress/dress/"
 new_window "dress"
 
 # Split window into panes.
-split_h 50 
+split_h 40 
 split_v 60
 
 # Set active pane.
