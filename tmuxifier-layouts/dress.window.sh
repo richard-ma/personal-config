@@ -8,12 +8,12 @@ new_window "dress"
 
 # Split window into panes.
 split_h 40 
-split_v 60
+split_v 40
 
 # Set active pane.
 select_pane 0
 
 # Run commands.
 run_cmd "vim" 0         # runs in active pane
-run_cmd "source ../bin/activate;" 1     # runs in pane 1
-run_cmd "source ../bin/activate; ./test.sh" 2     # runs in pane 2
+run_cmd "source ../bin/activate; ./test.sh" 1     # runs in pane 1
+run_cmd "source ../bin/activate;" 2     # runs in pane 2
