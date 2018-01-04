@@ -15,5 +15,5 @@ select_pane 0
 
 # Run commands.
 run_cmd "vim" 0         # runs in active pane
-run_cmd "source ../bin/activate; ./test.sh" 1     # runs in pane 1
+run_cmd "source ../bin/activate; python manager.py test" 1     # runs in pane 1
 run_cmd "source ../bin/activate;" 2     # runs in pane 2
