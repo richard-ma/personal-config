@@ -681,3 +681,7 @@ endif
 if filewritable(g:session_file_name)
     au VimLeave * mksession! ./session.vim
 endif
+
+" vim-slime
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
