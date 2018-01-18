@@ -13,5 +13,5 @@ split_h 50
 select_pane 0
 
 # Run commands.
-run_cmd "source ../bin/activate; pip install flake8 yapf; vim test.py" 0
-run_cmd "source ../bin/activate; python" 1     # runs in pane 1
+run_cmd "vim" 0
+run_cmd "python3" 1     # runs in pane 1

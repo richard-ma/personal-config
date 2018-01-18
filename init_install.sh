@@ -28,6 +28,8 @@ sudo apt-get -y install \
     python-notify \
     exuberant-ctags \
     tmux \
+    python3 \
+    python3-pip\
     #miredo \
 
 ## PPA
@@ -40,6 +42,9 @@ sudo apt-get -y install \
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get -y update
 sudo apt-get -y install oracle-java8-installer oracle-java8-set-default
+
+# python
+pip3 install yapf
 
 # change default sh (The Last One)
 chsh -s /bin/zsh
