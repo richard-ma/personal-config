@@ -1,6 +1,6 @@
 # Set window root path. Default is `$session_root`.
 # Must be called before `new_window`.
-window_root "."
+window_root "/home/richardma/VirtualEnvs/test/src"
 
 # Create new window. If no argument is given, window name will be based on
 # layout file name.
@@ -13,5 +13,5 @@ split_h 50
 select_pane 0
 
 # Run commands.
-run_cmd "vim" 0
-rum_cmd "source ../bin/activate && python" 1
+run_cmd "vim test.py" 0
+run_cmd "source ../bin/activate; python" 1     # runs in pane 1
