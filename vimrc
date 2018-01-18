@@ -433,10 +433,10 @@ au FileType python syn keyword pythonDecorator True None False self
 au BufNewFile,BufRead *.jinja set syntax=htmljinja
 au BufNewFile,BufRead *.mako set ft=mako
 
-au FileType python map <buffer> <leader>1 /class 
-au FileType python map <buffer> <leader>2 /def 
-au FileType python map <buffer> <leader>C ?class 
-au FileType python map <buffer> <leader>D ?def 
+au FileType python map <F5> :!python %<CR>
+au FileType python map <F6> :!chmod a+x %<CR>
+au FileType python map <buffer> <F7> :call Flake8()<CR>
+au FileType python noremap <F8> :0,$!yapf<CR>
 
 
 """"""""""""""""""""""""""""""
@@ -508,13 +508,6 @@ au FileType lisp map <F7> :!chmod a+x %<CR>
 au FileType ruby map <F5> :!./%<CR>
 au FileType ruby map <F6> :!ruby %<CR>
 au FileType ruby map <F7> :!chmod a+x %<CR>
-
-"--------------------------------------------------------------
-" About .py python
-"--------------------------------------------------------------
-au FileType python map <F5> :!python %<CR>
-au FileType python map <F6> :!python %<CR>
-au FileType python map <F7> :!chmod a+x %<CR>
 
 "--------------------------------------------------------------
 " About .php PHP
