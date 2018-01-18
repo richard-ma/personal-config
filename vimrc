@@ -435,7 +435,9 @@ au BufNewFile,BufRead *.mako set ft=mako
 
 au FileType python map <F5> :!python %<CR>
 au FileType python map <F6> :!chmod a+x %<CR>
+" pip install flake8
 au FileType python map <buffer> <F7> :call Flake8()<CR>
+" pip install yapf
 au FileType python noremap <F8> :0,$!yapf<CR>
 
 
