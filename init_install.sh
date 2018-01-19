@@ -44,7 +44,7 @@ sudo apt-get -y update
 sudo apt-get -y install oracle-java8-installer oracle-java8-set-default
 
 # python
-pip3 install yapf
+sudo pip3 install yapf
 
 # change default sh (The Last One)
 chsh -s /bin/zsh
