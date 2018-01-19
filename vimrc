@@ -145,7 +145,8 @@ set shell=/bin/zsh
 " Show line number
 set nu
 " Show underline on column 81 and more by c/cpp/python
-au BufRead,BufNewFile *.c,*.cpp,*.py match UnderLined /.\%>81v/
+"au BufRead,BufNewFile *.c,*.cpp,*.py match UnderLined /.\%>81v/
+set colorcolumn=80
 
 if has("gui_running")
 set guifont=Monaco\ 9
