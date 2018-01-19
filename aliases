@@ -23,4 +23,4 @@ alias grep='grep --color=always'
 alias server='python -m SimpleHTTPServer'
 
 # tmux shortcut
-alias t='tmux attach'
+alias tmux='TERM=screen-256color-bce tmux'
