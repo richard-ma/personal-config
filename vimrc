@@ -433,7 +433,7 @@ au FileType python syn keyword pythonDecorator True None False self
 au BufNewFile,BufRead *.jinja set syntax=htmljinja
 au BufNewFile,BufRead *.mako set ft=mako
 
-au FileType python map <F5> :!python %<CR>
+au FileType python map <F5> :!python3 %<CR>
 au FileType python map <F6> :!chmod a+x %<CR>
 " pip install flake8
 au FileType python map <buffer> <F7> :call Flake8()<CR>
