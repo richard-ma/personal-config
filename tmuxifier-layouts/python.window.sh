@@ -7,7 +7,7 @@ window_root "."
 new_window "Python REPL"
 
 # Split window into panes.
-split_h 50
+split_v 40
 
 # Set active pane.
 select_pane 0
