@@ -15,6 +15,8 @@ sudo apt-get -y install \
     git \
     rar \
     unrar \
+    zip \
+    unzip \
     tofrodos \
     curl \
     imagemagick \
@@ -23,8 +25,6 @@ sudo apt-get -y install \
     python-vte \
     gimp \
     p7zip \
-    ibus-sunpinyin \
-    python-notify \
     exuberant-ctags \
     tmux \
     python3 \
@@ -39,9 +39,9 @@ sudo apt-get -y install \
 #sudo apt-get -y install ffmpeg
 
 # java
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo apt-get -y update
-sudo apt-get -y install oracle-java8-installer oracle-java8-set-default
+#sudo add-apt-repository -y ppa:webupd8team/java
+#sudo apt-get -y update
+#sudo apt-get -y install oracle-java8-installer oracle-java8-set-default
 
 # python
 sudo pip3 install yapf
