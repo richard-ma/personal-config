@@ -28,7 +28,8 @@ sudo apt-get -y install \
     exuberant-ctags \
     tmux \
     python3 \
-    python3-pip\
+    python3-pip \
+    virtualenv
 #   miredo \
 #   vim-nox-py2 \
 
