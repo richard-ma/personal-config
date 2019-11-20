@@ -29,7 +29,8 @@ sudo apt-get -y install \
     tmux \
     python3 \
     python3-pip \
-    virtualenv
+    virtualenv \
+    ibus-pinyin
 #   miredo \
 #   vim-nox-py2 \
 
