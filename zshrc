@@ -90,3 +90,6 @@ export PATH=$PATH:~/.config/composer/vendor/bin
 
 # host-monitor
 export HOST_MONITOR_URI=http://ddns.richardma.info/hosts/
+
+# chrome webdriver
+export PATH=$PATH:~/Opt/chromedriver_linux64

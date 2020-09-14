@@ -17,7 +17,6 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias lal='ls -Alh'
 alias l='ls -CF'
-alias grep='grep --color=always'
 
 # Create web http server with python
 alias server='python -m SimpleHTTPServer'
