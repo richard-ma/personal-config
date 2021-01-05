@@ -15,18 +15,18 @@
     co = checkout
 	wc = whatchanged
     br = branch
-    pom = push -v origin master:master
-    pomt = push -v origin master:master --tags
-    fu = fetch -v origin master:update
+    pom = push -v origin main:main
+    pomt = push -v origin main:main --tags
+    fu = fetch -v origin main:update
     mu = merge -v update
     du = branch -d update
     pod = push -v origin dev:dev
     podt = push -v origin dev:dev --tags
-    pomp = push -v origin master:production
+    pomp = push -v origin main:production
     fdu = fetch -v origin dev:update-dev
     mdu = merge -v update-dev
     ddu = branch -d update-dev
-    fup = fetch -v upstream master:upstream
+    fup = fetch -v upstream main:upstream
     mup = merge -v upstream
     dup = branch -d upstream
 [diff]
