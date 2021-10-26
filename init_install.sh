@@ -8,6 +8,7 @@ sudo apt-get -y update
 sudo apt-get -y dist-upgrade
 
 sudo apt-get -y install \
+    ubuntu-restricted-extras \
     vim \
     zsh \
     openssh-server \
@@ -20,19 +21,11 @@ sudo apt-get -y install \
     tofrodos \
     curl \
     imagemagick \
-    phpmyadmin \
-    python-pip \
-    python-vte \
-    gimp \
+    python3-pip \
     p7zip \
     exuberant-ctags \
-    tmux \
-    python3 \
-    python3-pip \
     virtualenv \
     ibus-pinyin
-#   miredo \
-#   vim-nox-py2 \
 
 ## PPA
 # ffmpeg
